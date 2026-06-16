@@ -11,6 +11,17 @@
 * **一站式 Skill**：调用一个 Skill 完成完整巡礼规划。
 * **分阶段 Skill 链**：按作品搜索、出行信息收集、点位获取、路线规划、HTML 生成等步骤逐步执行。
 
+## 在线示例
+
+可以通过 GitHub Pages 查看生成后的路线示例：
+
+- [Route A：全量点位路线](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_A.html)
+- [Route B：时间适配路线](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_B.html)
+
+Route A 覆盖所有具有有效坐标的 Anitabi 点位；Route B 则根据用户可用出行时间生成时间适配路线。
+
+示例页面为生成后的 HTML 结果。天气、路线耗时、营业时间、价格和交通信息仅供参考，实际出行前请再次确认。
+
 ## 主要功能
 
 * 根据动漫名称或关键词搜索 Bangumi 作品信息。

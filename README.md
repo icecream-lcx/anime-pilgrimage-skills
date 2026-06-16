@@ -11,6 +11,18 @@ It supports two workflows:
 * **All-in-one skill**: complete the whole pilgrimage planning process with one skill.
 * **Staged skill chain**: run the workflow step by step, including anime search, trip profile collection, landmark fetching, route planning, and HTML itinerary generation.
 
+## Online Demo
+
+You can view the generated itinerary examples through GitHub Pages:
+
+* [Route A: Full landmark route](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_A.html)
+* [Route B: Time-fit route](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_B.html)
+
+Route A covers all valid Anitabi coordinate points, while Route B provides a time-fit route based on the user's available travel time.
+
+The demo pages are generated HTML examples. Weather, route duration, opening hours, prices, and traffic information are for reference only and should be verified again before departure.
+
+
 ## Features
 
 * Search anime works by title or keyword through Bangumi.
