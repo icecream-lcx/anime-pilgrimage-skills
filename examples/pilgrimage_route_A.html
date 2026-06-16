@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>冰菓 圣地巡礼计划 - 路线 A：全点位参考路线</title>
+<style>
+body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; margin: 24px; line-height: 1.6; color: #1f2937; background: #f7f4ee; }
+h1, h2, h3 { margin: 0 0 10px; }
+a { color: #0f5d5e; }
+.card { background: #fffdf8; border: 1px solid #dfd4c3; border-radius: 16px; padding: 16px 18px; margin: 16px 0; box-shadow: 0 2px 10px rgba(0,0,0,.04); }
+.small { color: #6b7280; font-size: 0.92em; }
+.warn { background: #fff5e8; border-left: 4px solid #d97706; padding: 10px 12px; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { border: 1px solid #d9cdbb; padding: 8px; vertical-align: top; background: #fff; }
+th { background: #f3eadb; }
+td[contenteditable="true"] { background: #fffdf4; }
+button { padding: 8px 12px; border-radius: 10px; border: 1px solid #c6b89f; background: #fff; cursor: pointer; margin: 4px 8px 4px 0; }
+.drag-over { outline: 3px dashed #0f766e; }
+.stop-row, .omitted-row { cursor: grab; }
+.over-time { background: #fff1f2 !important; }
+@media print { button { display: none; } body { margin: 10mm; background: #fff; } .card { box-shadow: none; } }
+</style>
+</head>
+<body>
+<h1>冰菓 圣地巡礼计划</h1>
+<div class="card">
+  <p><strong>作品：</strong>冰菓　<strong>Bangumi ID：</strong>27364</p>
+  <p><strong>日期：</strong>2026-06-18　<strong>时间：</strong>09:00 - 18:00</p>
+  <p><strong>起终点：</strong>高山站 → ???</p>
+  <p><strong>当前页面：</strong>路线 A：全点位参考路线　<strong>路线类型：</strong>全点位路线　<strong>策略：</strong>全点位路线</p>
+  <p><strong>地图模式：</strong>仅提供 Google Maps 链接　<strong>单段步行上限：</strong>1.5 km</p>
+  <p class="warn">这条路线用于保留全部有效 Anitabi 点位，适合作为全集参考。当天走不完的点位会保留在页面中，方便你删除、调整或后续拆分成多天。</p>
+  <button onclick="window.print()">打印 / 导出 PDF</button>
+  <button onclick="exportText()">导出当前文本</button>
+</div>
+
+<div class="card">
+  <h2>总路线链接</h2>
+  <p><a id="overallRouteMain" href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1563%2C137.2579&amp;destination=36.1415%2C137.2595&amp;travelmode=walking&amp;waypoints=36.1566%2C137.2581%7C36.1537%2C137.2572%7C36.1487%2C137.2566%7C36.1454%2C137.2568%7C36.1459%2C137.2567%7C36.145%2C137.2579%7C36.1456%2C137.2574%7C36.1411%2C137.2582%7C36.1416%2C137.2596" target="_blank"><strong>打开当前整条路线</strong></a></p>
+  <ul id="overallRouteParts"><li>第 1 段：神山高校 到 古い町並（上三之町），共 11 个点位，<a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1563%2C137.2579&amp;destination=36.1415%2C137.2595&amp;travelmode=walking&amp;waypoints=36.1566%2C137.2581%7C36.1537%2C137.2572%7C36.1487%2C137.2566%7C36.1454%2C137.2568%7C36.1459%2C137.2567%7C36.145%2C137.2579%7C36.1456%2C137.2574%7C36.1411%2C137.2582%7C36.1416%2C137.2596" target="_blank">打开 Google Maps</a></li><li>第 2 段：古い町並（上三之町） 到 緞治橋交叉點，共 11 个点位，<a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1415%2C137.2595&amp;destination=36.143%2C137.2576&amp;travelmode=walking&amp;waypoints=36.1429%2C137.2575%7C36.1422%2C137.2578%7C36.1379%2C137.256%7C36.1382%2C137.256%7C36.1336%2C137.2592%7C36.1328%2C137.261%7C36.1327%2C137.2613%7C36.1425%2C137.2578%7C36.1411%2C137.259" target="_blank">打开 Google Maps</a></li><li>第 3 段：緞治橋交叉點 到 一般​社団​法人​飛騨・​高山​観光​コンベンション​協会，共 3 个点位，<a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.143%2C137.2576&amp;destination=36.14%2C137.2587&amp;travelmode=walking&amp;waypoints=36.1453%2C137.2578" target="_blank">打开 Google Maps</a></li></ul>
+  <button onclick="rebuildOverallRouteLinks()">按当前表格重建路线链接</button>
+  <button onclick="recalculateSchedule()">按当前顺序重算时间</button>
+  <p id="scheduleStatus" class="small" contenteditable="true">路线 A 保留全部有效 Anitabi 点位，适合作为全集参考。由于点位总量与跨度都较大，不可能在 2026-06-18 的 09:00-18:00 内全部走完，因此页面中会保留超出当天能力范围的点位，方便你继续删改或拆成多天。</p>
+</div>
+
+<div class="card">
+  <h2>天气提示</h2>
+  <p contenteditable="true">上午到中午前段气温约 21-25.5°C，整体较适合步行拍照；13:00 以后降雨概率开始上升，15:00 以后明显偏高，建议把主要室外取景安排在前半天，并随身携带雨具。</p>
+</div>
+
+<div class="card">
+  <h2>提醒与假设</h2>
+  <h3>提醒</h3>
+  <ul contenteditable="true"><li>当前未配置 GOOGLE_MAPS_API_KEY，因此无法自动获取 Google Maps 的实时公交时长、营业时间、评分或价格等级。</li><li>天气预报基于 2026-06-16 获取的数据，距离 2026-06-18 出发仍有变化可能，请在前一晚再次确认。</li><li>Anitabi 原始点位中包含平汤、飞驒一宫、飞驒古川以及东京等远距离点位；路线 A 继续完整保留，路线 B 则只保留单日可行部分。</li></ul>
+  <h3>假设</h3>
+  <ul contenteditable="true"><li>默认你要巡礼的是 Bangumi 27364 的 TV 版《冰菓》，而不是 OAD 条目 111762。</li><li>由于你没有单独提供住宿地或不同终点，本计划默认从高山站出发并回到高山站结束。</li><li>移动方式按步行为主、超出 1.5 km 时切换为公共交通或打车的保守策略处理。</li><li>在没有 Google Maps API 的情况下，路线耗时属于规划级估算，不应视作当天实时结果。</li></ul>
+</div>
+
+<div class="card">
+  <h2>主路线时间表</h2>
+  <p class="small">表格可直接编辑。Route B 支持拖拽重排，也可把下方未纳入点位加入主路线。</p>
+  <table id="stops">
+    <thead><tr><th>序号</th><th>到达</th><th>离开</th><th>停留(分钟)</th><th>点位</th><th>场景 / 照片</th><th>营业信息</th><th>价格信息</th><th>地图</th><th>操作</th></tr></thead>
+    <tbody>
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0v9" data-name="神山高校" data-lat="36.1563" data-lng="137.2579" data-photo="https://image.anitabi.cn/points/27364/7ek5c0v9.jpg?plan=h160" data-notes="EP1 / scene 14" data-stay-min="20">
+              <td class="order" contenteditable="true">1</td>
+              <td class="arrival" contenteditable="true">09:23</td>
+              <td class="departure" contenteditable="true">09:43</td>
+              <td class="stay" contenteditable="true">20</td>
+              <td class="place" contenteditable="true"><strong>神山高校</strong><br><small>36.1563, 137.2579</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP1 / scene 14<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/points/27364/7ek5c0v9.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1563%2C137.2579" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="ozj8t9728" data-name="上学道" data-lat="36.1566" data-lng="137.2581" data-photo="https://image.anitabi.cn/user/2111/bangumi/27364/points/ozj8t9728-1728634530993.jpg?plan=h160" data-notes="EP1 / scene 3" data-stay-min="15">
+              <td class="order" contenteditable="true">2</td>
+              <td class="arrival" contenteditable="true">09:47</td>
+              <td class="departure" contenteditable="true">10:02</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>上学道</strong><br><small>36.1566, 137.2581</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP1 / scene 3<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/2111/bangumi/27364/points/ozj8t9728-1728634530993.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1566%2C137.2581" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0oh" data-name="恋合病院" data-lat="36.1537" data-lng="137.2572" data-photo="https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0oh-1674098984191.jpg?plan=h160" data-notes="EP8 / scene 1180" data-stay-min="15">
+              <td class="order" contenteditable="true">3</td>
+              <td class="arrival" contenteditable="true">10:08</td>
+              <td class="departure" contenteditable="true">10:23</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>恋合病院</strong><br><small>36.1537, 137.2572</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP8 / scene 1180<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0oh-1674098984191.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1537%2C137.2572" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="59orvui2a" data-name="不动桥" data-lat="36.1487" data-lng="137.2566" data-photo="https://image.anitabi.cn/user/1000/bangumi/27364/points/59orvui2a-1673008001802.jpg?plan=h160" data-notes="EP4 / scene 428" data-stay-min="15">
+              <td class="order" contenteditable="true">4</td>
+              <td class="arrival" contenteditable="true">10:33</td>
+              <td class="departure" contenteditable="true">10:48</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>不动桥</strong><br><small>36.1487, 137.2566</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP4 / scene 428<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/1000/bangumi/27364/points/59orvui2a-1673008001802.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1487%2C137.2566" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0rz" data-name="OP1 场景（本町4商店街駐車場）" data-lat="36.1454" data-lng="137.2568" data-photo="https://image.anitabi.cn/user/1079/bangumi/27364/points/7ek5c0rz-1714998249396.jpg?plan=h160" data-notes="EP1 / scene 281" data-stay-min="15">
+              <td class="order" contenteditable="true">5</td>
+              <td class="arrival" contenteditable="true">10:54</td>
+              <td class="departure" contenteditable="true">11:09</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>OP1 场景（本町4商店街駐車場）</strong><br><small>36.1454, 137.2568</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP1 / scene 281<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/1079/bangumi/27364/points/7ek5c0rz-1714998249396.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1454%2C137.2568" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c062" data-name="5 话场景（寄信处）" data-lat="36.1459" data-lng="137.2567" data-photo="https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c062-1719993523136.jpg?plan=h160" data-notes="EP5 / scene 1531" data-stay-min="15">
+              <td class="order" contenteditable="true">6</td>
+              <td class="arrival" contenteditable="true">11:13</td>
+              <td class="departure" contenteditable="true">11:28</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>5 话场景（寄信处）</strong><br><small>36.1459, 137.2567</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP5 / scene 1531<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c062-1719993523136.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1459%2C137.2567" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0ff" data-name="宮川朝市" data-lat="36.145" data-lng="137.2579" data-photo="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0ff-1673008080221.jpg?plan=h160" data-notes="EP11 / scene 102" data-stay-min="20">
+              <td class="order" contenteditable="true">7</td>
+              <td class="arrival" contenteditable="true">11:32</td>
+              <td class="departure" contenteditable="true">11:52</td>
+              <td class="stay" contenteditable="true">20</td>
+              <td class="place" contenteditable="true"><strong>宮川朝市</strong><br><small>36.145, 137.2579</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP11 / scene 102<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0ff-1673008080221.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息仅供规划参考，请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：free to browse; shop purchases vary<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.145%2C137.2579" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0vv" data-name="宮川河川敷" data-lat="36.1456" data-lng="137.2574" data-photo="https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0vv-1719993407384.jpg?plan=h160" data-notes="EP11 / scene 392" data-stay-min="15">
+              <td class="order" contenteditable="true">8</td>
+              <td class="arrival" contenteditable="true">11:56</td>
+              <td class="departure" contenteditable="true">12:11</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>宮川河川敷</strong><br><small>36.1456, 137.2574</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP11 / scene 392<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0vv-1719993407384.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1456%2C137.2574" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="rno7fzcnt" data-name="猫鱼雕像" data-lat="36.1411" data-lng="137.2582" data-photo="https://image.anitabi.cn/user/1028/bangumi/27364/points/rno7fzcnt-1736168349049.jpg?plan=h160" data-notes="EP1 / scene 284" data-stay-min="15">
+              <td class="order" contenteditable="true">9</td>
+              <td class="arrival" contenteditable="true">12:20</td>
+              <td class="departure" contenteditable="true">12:35</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>猫鱼雕像</strong><br><small>36.1411, 137.2582</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP1 / scene 284<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/1028/bangumi/27364/points/rno7fzcnt-1736168349049.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1411%2C137.2582" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0ru" data-name="喫茶一二三" data-lat="36.1416" data-lng="137.2596" data-photo="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0ru-1673008192510.jpg?plan=h160" data-notes="EP10 / scene 1" data-stay-min="45">
+              <td class="order" contenteditable="true">10</td>
+              <td class="arrival" contenteditable="true">12:39</td>
+              <td class="departure" contenteditable="true">13:24</td>
+              <td class="stay" contenteditable="true">45</td>
+              <td class="place" contenteditable="true"><strong>喫茶一二三</strong><br><small>36.1416, 137.2596</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP10 / scene 1<br>Best window before afternoon rain risk rises.<br><a href="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0ru-1673008192510.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息仅供规划参考，请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1416%2C137.2596" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="415j01y" data-name="古い町並（上三之町）" data-lat="36.1415" data-lng="137.2595" data-photo="https://image.anitabi.cn/user/2192/bangumi/27364/points/415j01y-1755787235989.jpg?plan=h160" data-notes="EP10 / scene 1" data-stay-min="15">
+              <td class="order" contenteditable="true">11</td>
+              <td class="arrival" contenteditable="true">13:28</td>
+              <td class="departure" contenteditable="true">13:43</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>古い町並（上三之町）</strong><br><small>36.1415, 137.2595</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP10 / scene 1<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/2192/bangumi/27364/points/415j01y-1755787235989.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1415%2C137.2595" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0tg" data-name="鍛冶橋交差点" data-lat="36.1429" data-lng="137.2575" data-photo="https://image.anitabi.cn/user/0/bangumi/27364/points/2.jpg?plan=h160" data-notes="EP1 / scene 1522" data-stay-min="15">
+              <td class="order" contenteditable="true">12</td>
+              <td class="arrival" contenteditable="true">13:47</td>
+              <td class="departure" contenteditable="true">14:02</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>鍛冶橋交差点</strong><br><small>36.1429, 137.2575</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP1 / scene 1522<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/0/bangumi/27364/points/2.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1429%2C137.2575" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0tb" data-name="本町2丁目" data-lat="36.1422" data-lng="137.2578" data-photo="https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0tb-1732877757354.jpg?plan=h160" data-notes="EP10 / scene 481" data-stay-min="15">
+              <td class="order" contenteditable="true">13</td>
+              <td class="arrival" contenteditable="true">14:06</td>
+              <td class="departure" contenteditable="true">14:21</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>本町2丁目</strong><br><small>36.1422, 137.2578</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP10 / scene 481<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0tb-1732877757354.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1422%2C137.2578" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7emmn40i" data-name="神山神社石狮" data-lat="36.1379" data-lng="137.256" data-photo="https://image.anitabi.cn/points/27364/7emmn40i.jpg?plan=h160" data-notes="EP2 / scene 2" data-stay-min="15">
+              <td class="order" contenteditable="true">14</td>
+              <td class="arrival" contenteditable="true">14:30</td>
+              <td class="departure" contenteditable="true">14:45</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>神山神社石狮</strong><br><small>36.1379, 137.256</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP2 / scene 2<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/points/27364/7emmn40i.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1379%2C137.256" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c04j" data-name="8 话场景" data-lat="36.1382" data-lng="137.256" data-photo="https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c04j-1716746943691.jpg?plan=h160" data-notes="EP8 / scene 1274" data-stay-min="15">
+              <td class="order" contenteditable="true">15</td>
+              <td class="arrival" contenteditable="true">14:49</td>
+              <td class="departure" contenteditable="true">15:04</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>8 话场景</strong><br><small>36.1382, 137.256</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP8 / scene 1274<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c04j-1716746943691.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1382%2C137.256" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0v5" data-name="神社参道" data-lat="36.1336" data-lng="137.2592" data-photo="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0v5-1673008129587.jpg?plan=h160" data-notes="EP6 / scene 159" data-stay-min="15">
+              <td class="order" contenteditable="true">16</td>
+              <td class="arrival" contenteditable="true">15:14</td>
+              <td class="departure" contenteditable="true">15:29</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>神社参道</strong><br><small>36.1336, 137.2592</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP6 / scene 159<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0v5-1673008129587.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1336%2C137.2592" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c0bb" data-name="荒楠神社" data-lat="36.1328" data-lng="137.261" data-photo="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0bb-1673008157926.jpg?plan=h160" data-notes="EP19 / scene 85" data-stay-min="20">
+              <td class="order" contenteditable="true">17</td>
+              <td class="arrival" contenteditable="true">15:33</td>
+              <td class="departure" contenteditable="true">15:53</td>
+              <td class="stay" contenteditable="true">20</td>
+              <td class="place" contenteditable="true"><strong>荒楠神社</strong><br><small>36.1328, 137.261</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP19 / scene 85<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0bb-1673008157926.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息仅供规划参考，请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1328%2C137.261" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="rnnbjfvwp" data-name="日枝神社社务所" data-lat="36.1327" data-lng="137.2613" data-photo="https://image.anitabi.cn/user/1028/bangumi/27364/points/rnnbjfvwp-1736166443680.jpg?plan=h160" data-notes="EP20 / scene 344" data-stay-min="20">
+              <td class="order" contenteditable="true">18</td>
+              <td class="arrival" contenteditable="true">15:57</td>
+              <td class="departure" contenteditable="true">16:17</td>
+              <td class="stay" contenteditable="true">20</td>
+              <td class="place" contenteditable="true"><strong>日枝神社社务所</strong><br><small>36.1327, 137.2613</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP20 / scene 344<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/1028/bangumi/27364/points/rnnbjfvwp-1736166443680.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息仅供规划参考，请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1327%2C137.2613" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="7ek5c04k" data-name="猫鱼" data-lat="36.1425" data-lng="137.2578" data-photo="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c04k-1673008391472.jpg?plan=h160" data-notes="EP2 / scene 99" data-stay-min="15">
+              <td class="order" contenteditable="true">19</td>
+              <td class="arrival" contenteditable="true">16:37</td>
+              <td class="departure" contenteditable="true">16:52</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>猫鱼</strong><br><small>36.1425, 137.2578</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP2 / scene 99<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c04k-1673008391472.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1425%2C137.2578" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="414wgnu" data-name="バグパイプ" data-lat="36.1411" data-lng="137.259" data-photo="https://image.anitabi.cn/user/2192/bangumi/27364/points/414wgnu-1755786192062.jpg?plan=h160" data-notes="EP3 / scene 14" data-stay-min="15">
+              <td class="order" contenteditable="true">20</td>
+              <td class="arrival" contenteditable="true">16:56</td>
+              <td class="departure" contenteditable="true">17:11</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>バグパイプ</strong><br><small>36.1411, 137.259</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP3 / scene 14<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/2192/bangumi/27364/points/414wgnu-1755786192062.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1411%2C137.259" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="e5ab45x" data-name="緞治橋交叉點" data-lat="36.143" data-lng="137.2576" data-photo="https://image.anitabi.cn/user/0/bangumi/27364/points/e5ab45x-1777804987014.jpg?plan=h160" data-notes="EP18" data-stay-min="15">
+              <td class="order" contenteditable="true">21</td>
+              <td class="arrival" contenteditable="true">17:15</td>
+              <td class="departure" contenteditable="true">17:30</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>緞治橋交叉點</strong><br><small>36.143, 137.2576</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EP18<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/0/bangumi/27364/points/e5ab45x-1777804987014.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.143%2C137.2576" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="cwuduh0" data-name="岐阜县高山水位观测站" data-lat="36.1453" data-lng="137.2578" data-photo="https://image.anitabi.cn/user/0/bangumi/27364/points/cwuduh0-1775118071002.jpg?plan=h160" data-notes="EPOP" data-stay-min="15">
+              <td class="order" contenteditable="true">22</td>
+              <td class="arrival" contenteditable="true">17:34</td>
+              <td class="departure" contenteditable="true">17:49</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>岐阜县高山水位观测站</strong><br><small>36.1453, 137.2578</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">EPOP<br>Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/0/bangumi/27364/points/cwuduh0-1775118071002.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1453%2C137.2578" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            
+            <tr class="stop-row" draggable="true" data-point-id="u3z4mo7nc" data-name="一般​社団​法人​飛騨・​高山​観光​コンベンション​協会" data-lat="36.14" data-lng="137.2587" data-photo="https://image.anitabi.cn/user/2192/bangumi/27364/points/u3z4mo7nc-1755786535729.jpg?plan=h160" data-notes="" data-stay-min="15">
+              <td class="order" contenteditable="true">23</td>
+              <td class="arrival" contenteditable="true">17:59</td>
+              <td class="departure" contenteditable="true">18:14</td>
+              <td class="stay" contenteditable="true">15</td>
+              <td class="place" contenteditable="true"><strong>一般​社団​法人​飛騨・​高山​観光​コンベンション​協会</strong><br><small>36.14, 137.2587</small><br><small>状态：已排入主路线</small></td>
+              <td class="notes" contenteditable="true">Carry rain gear after early afternoon.<br><a href="https://image.anitabi.cn/user/2192/bangumi/27364/points/u3z4mo7nc-1755786535729.jpg?plan=h160" target="_blank">参考图</a></td>
+              <td contenteditable="true">待确认<br><small>营业时间、票价与价格信息请在出发前再次确认。</small></td>
+              <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.14%2C137.2587" target="_blank">地图</a></td>
+              <td><button onclick="deleteStopRow(this)">删除</button></td>
+            </tr>
+            </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>分段交通</h2>
+  <table id="segments">
+    <thead><tr><th>序号</th><th>出发</th><th>到达</th><th>方式</th><th>距离</th><th>预计时长</th><th>链接</th></tr></thead>
+    <tbody>
+            <tr>
+              <td>1</td>
+              <td>???</td>
+              <td>神山高校</td>
+              <td>公共交通</td>
+              <td>2.18 km</td>
+              <td>23 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.141126%2C137.2512848&amp;destination=36.1563%2C137.2579&amp;travelmode=transit" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>2</td>
+              <td>神山高校</td>
+              <td>上学道</td>
+              <td>步行</td>
+              <td>0.05 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1563%2C137.2579&amp;destination=36.1566%2C137.2581&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>3</td>
+              <td>上学道</td>
+              <td>恋合病院</td>
+              <td>步行</td>
+              <td>0.41 km</td>
+              <td>6 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1566%2C137.2581&amp;destination=36.1537%2C137.2572&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>4</td>
+              <td>恋合病院</td>
+              <td>不动桥</td>
+              <td>步行</td>
+              <td>0.68 km</td>
+              <td>10 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1537%2C137.2572&amp;destination=36.1487%2C137.2566&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>5</td>
+              <td>不动桥</td>
+              <td>OP1 场景（本町4商店街駐車場）</td>
+              <td>步行</td>
+              <td>0.45 km</td>
+              <td>6 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1487%2C137.2566&amp;destination=36.1454%2C137.2568&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>6</td>
+              <td>OP1 场景（本町4商店街駐車場）</td>
+              <td>5 话场景（寄信处）</td>
+              <td>步行</td>
+              <td>0.07 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1454%2C137.2568&amp;destination=36.1459%2C137.2567&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>7</td>
+              <td>5 话场景（寄信处）</td>
+              <td>宮川朝市</td>
+              <td>步行</td>
+              <td>0.18 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1459%2C137.2567&amp;destination=36.145%2C137.2579&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>8</td>
+              <td>宮川朝市</td>
+              <td>宮川河川敷</td>
+              <td>步行</td>
+              <td>0.10 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.145%2C137.2579&amp;destination=36.1456%2C137.2574&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>9</td>
+              <td>宮川河川敷</td>
+              <td>猫鱼雕像</td>
+              <td>步行</td>
+              <td>0.62 km</td>
+              <td>9 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1456%2C137.2574&amp;destination=36.1411%2C137.2582&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>10</td>
+              <td>猫鱼雕像</td>
+              <td>喫茶一二三</td>
+              <td>步行</td>
+              <td>0.17 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1411%2C137.2582&amp;destination=36.1416%2C137.2596&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>11</td>
+              <td>喫茶一二三</td>
+              <td>古い町並（上三之町）</td>
+              <td>步行</td>
+              <td>0.02 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1416%2C137.2596&amp;destination=36.1415%2C137.2595&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>12</td>
+              <td>古い町並（上三之町）</td>
+              <td>鍛冶橋交差点</td>
+              <td>步行</td>
+              <td>0.29 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1415%2C137.2595&amp;destination=36.1429%2C137.2575&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>13</td>
+              <td>鍛冶橋交差点</td>
+              <td>本町2丁目</td>
+              <td>步行</td>
+              <td>0.10 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1429%2C137.2575&amp;destination=36.1422%2C137.2578&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>14</td>
+              <td>本町2丁目</td>
+              <td>神山神社石狮</td>
+              <td>步行</td>
+              <td>0.62 km</td>
+              <td>9 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1422%2C137.2578&amp;destination=36.1379%2C137.256&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>15</td>
+              <td>神山神社石狮</td>
+              <td>8 话场景</td>
+              <td>步行</td>
+              <td>0.04 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1379%2C137.256&amp;destination=36.1382%2C137.256&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>16</td>
+              <td>8 话场景</td>
+              <td>神社参道</td>
+              <td>步行</td>
+              <td>0.72 km</td>
+              <td>10 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1382%2C137.256&amp;destination=36.1336%2C137.2592&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>17</td>
+              <td>神社参道</td>
+              <td>荒楠神社</td>
+              <td>步行</td>
+              <td>0.23 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1336%2C137.2592&amp;destination=36.1328%2C137.261&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>18</td>
+              <td>荒楠神社</td>
+              <td>日枝神社社务所</td>
+              <td>步行</td>
+              <td>0.04 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1328%2C137.261&amp;destination=36.1327%2C137.2613&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>19</td>
+              <td>日枝神社社务所</td>
+              <td>猫鱼</td>
+              <td>步行</td>
+              <td>1.38 km</td>
+              <td>20 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1327%2C137.2613&amp;destination=36.1425%2C137.2578&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>20</td>
+              <td>猫鱼</td>
+              <td>バグパイプ</td>
+              <td>步行</td>
+              <td>0.23 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1425%2C137.2578&amp;destination=36.1411%2C137.259&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>21</td>
+              <td>バグパイプ</td>
+              <td>緞治橋交叉點</td>
+              <td>步行</td>
+              <td>0.30 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1411%2C137.259&amp;destination=36.143%2C137.2576&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>22</td>
+              <td>緞治橋交叉點</td>
+              <td>岐阜县高山水位观测站</td>
+              <td>步行</td>
+              <td>0.31 km</td>
+              <td>4 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.143%2C137.2576&amp;destination=36.1453%2C137.2578&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>23</td>
+              <td>岐阜县高山水位观测站</td>
+              <td>一般​社団​法人​飛騨・​高山​観光​コンベンション​協会</td>
+              <td>步行</td>
+              <td>0.73 km</td>
+              <td>10 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.1453%2C137.2578&amp;destination=36.14%2C137.2587&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            
+            <tr>
+              <td>24</td>
+              <td>一般​社団​法人​飛騨・​高山​観光​コンベンション​協会</td>
+              <td>???</td>
+              <td>步行</td>
+              <td>0.83 km</td>
+              <td>12 min (rough estimate)</td>
+              <td><a href="https://www.google.com/maps/dir/?api=1&amp;origin=36.14%2C137.2587&amp;destination=36.141126%2C137.2512848&amp;travelmode=walking" target="_blank">路线</a></td>
+            </tr>
+            </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>未纳入当天主路线的点位</h2>
+  <p class='small'>以下点位保留自原始 Anitabi 数据，当前未纳入当天主路线。Route B 可以拖拽或点击按钮重新加入。</p><table id='omitted'><thead><tr><th>序号</th><th>点位</th><th>未纳入原因</th><th>参考图</th><th>地图</th><th>操作</th></tr></thead><tbody>
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0da" data-name="4 话行车路线" data-lat="36.1414" data-lng="137.2652" data-photo="" data-notes="" data-stay-min="20">
+              <td>1</td>
+              <td><strong>4 话行车路线</strong><br><small>36.1414, 137.2652</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1414%2C137.2652" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="837zd8il8" data-name="安田講堂" data-lat="35.7134" data-lng="139.7622" data-photo="" data-notes="" data-stay-min="20">
+              <td>2</td>
+              <td><strong>安田講堂</strong><br><small>35.7134, 139.7622</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=35.7134%2C139.7622" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="ozk1ruc0l" data-name="OP1（水中阶梯？）" data-lat="36.1456" data-lng="137.2575" data-photo="" data-notes="" data-stay-min="20">
+              <td>3</td>
+              <td><strong>OP1（水中阶梯？）</strong><br><small>36.1456, 137.2575</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1456%2C137.2575" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0lp" data-name="アルプス街道平湯" data-lat="36.1909" data-lng="137.552" data-photo="" data-notes="" data-stay-min="20">
+              <td>4</td>
+              <td><strong>アルプス街道平湯</strong><br><small>36.1909, 137.552</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1909%2C137.552" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="rnokbyeu4" data-name="平湯バスターミナル足湯附近" data-lat="36.1909" data-lng="137.5516" data-photo="" data-notes="" data-stay-min="20">
+              <td>5</td>
+              <td><strong>平湯バスターミナル足湯附近</strong><br><small>36.1909, 137.5516</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1909%2C137.5516" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c066" data-name="青山荘" data-lat="36.1924" data-lng="137.5544" data-photo="" data-notes="" data-stay-min="20">
+              <td>6</td>
+              <td><strong>青山荘</strong><br><small>36.1924, 137.5544</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1924%2C137.5544" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c071" data-name="青山荘（馆内）" data-lat="36.192" data-lng="137.5526" data-photo="" data-notes="" data-stay-min="20">
+              <td>7</td>
+              <td><strong>青山荘（馆内）</strong><br><small>36.192, 137.5526</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.192%2C137.5526" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0ke" data-name="去温泉的路上" data-lat="36.1925" data-lng="137.5541" data-photo="" data-notes="" data-stay-min="20">
+              <td>8</td>
+              <td><strong>去温泉的路上</strong><br><small>36.1925, 137.5541</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1925%2C137.5541" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0jh" data-name="平湯民俗館和平湯神社岔路口" data-lat="36.1921" data-lng="137.554" data-photo="" data-notes="" data-stay-min="20">
+              <td>9</td>
+              <td><strong>平湯民俗館和平湯神社岔路口</strong><br><small>36.1921, 137.554</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1921%2C137.554" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="rnohuhy2g" data-name="平湯の湯" data-lat="36.1918" data-lng="137.5543" data-photo="" data-notes="" data-stay-min="20">
+              <td>10</td>
+              <td><strong>平湯の湯</strong><br><small>36.1918, 137.5543</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1918%2C137.5543" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0su" data-name="古丘町楢窪地区(?)" data-lat="36.3522" data-lng="137.3065" data-photo="" data-notes="" data-stay-min="20">
+              <td>11</td>
+              <td><strong>古丘町楢窪地区(?)</strong><br><small>36.3522, 137.3065</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.3522%2C137.3065" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0p2" data-name="9 话场景（八百屋）" data-lat="36.1457" data-lng="137.2567" data-photo="" data-notes="" data-stay-min="20">
+              <td>12</td>
+              <td><strong>9 话场景（八百屋）</strong><br><small>36.1457, 137.2567</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1457%2C137.2567" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c077" data-name="11 话场景（TOILET）" data-lat="36.1436" data-lng="137.2574" data-photo="" data-notes="" data-stay-min="20">
+              <td>13</td>
+              <td><strong>11 话场景（TOILET）</strong><br><small>36.1436, 137.2574</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1436%2C137.2574" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0iu" data-name="11.5 话场景（市民游泳池）" data-lat="36.1578" data-lng="137.2318" data-photo="" data-notes="" data-stay-min="20">
+              <td>14</td>
+              <td><strong>11.5 话场景（市民游泳池）</strong><br><small>36.1578, 137.2318</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1578%2C137.2318" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="42bcmtp" data-name="赤保木公園停车场门口" data-lat="36.1584" data-lng="137.2326" data-photo="" data-notes="" data-stay-min="20">
+              <td>15</td>
+              <td><strong>赤保木公園停车场门口</strong><br><small>36.1584, 137.2326</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1584%2C137.2326" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0br" data-name="12 话场景（桥）" data-lat="36.086" data-lng="137.2507" data-photo="" data-notes="" data-stay-min="20">
+              <td>16</td>
+              <td><strong>12 话场景（桥）</strong><br><small>36.086, 137.2507</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.086%2C137.2507" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0is" data-name="21 话场景（跨线桥）" data-lat="36.1383" data-lng="137.2515" data-photo="" data-notes="" data-stay-min="20">
+              <td>17</td>
+              <td><strong>21 话场景（跨线桥）</strong><br><small>36.1383, 137.2515</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1383%2C137.2515" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="7ek5c0bn" data-name="22 话场景（水无神社）" data-lat="36.0853" data-lng="137.2518" data-photo="" data-notes="" data-stay-min="20">
+              <td>18</td>
+              <td><strong>22 话场景（水无神社）</strong><br><small>36.0853, 137.2518</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.0853%2C137.2518" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="mjon95r1d" data-name="卧龙樱" data-lat="36.0888" data-lng="137.2478" data-photo="" data-notes="" data-stay-min="20">
+              <td>19</td>
+              <td><strong>卧龙樱</strong><br><small>36.0888, 137.2478</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.0888%2C137.2478" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="tohkn6rhs" data-name="op中的大楼梯（绝版）" data-lat="36.1447" data-lng="137.2579" data-photo="" data-notes="" data-stay-min="20">
+              <td>20</td>
+              <td><strong>op中的大楼梯（绝版）</strong><br><small>36.1447, 137.2579</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1447%2C137.2579" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            
+            <tr class="omitted-row" draggable="true" data-point-id="os8idl" data-name="花里跨线桥东" data-lat="36.1383" data-lng="137.2516" data-photo="" data-notes="" data-stay-min="20">
+              <td>21</td>
+              <td><strong>花里跨线桥东</strong><br><small>36.1383, 137.2516</small></td>
+              <td>时间不足</td>
+              <td></td>
+              <td><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1383%2C137.2516" target="_blank">地图</a></td>
+              <td></td>
+            </tr>
+            </tbody></table>
+</div>
+
+<div class="card">
+  <h2>手动确认清单</h2>
+  <ul contenteditable="true"><li>确认当天最新天气，尤其是下午降雨概率和雨具准备。</li><li>确认公共交通或返程步行安排，URL 模式下时长仅供参考。</li><li>确认喫茶一二三、宫川朝市、神社社务所等点位当天是否开放。</li><li>确认门票、消费、御朱印或特别参拜规则。</li><li>如你对表格做了删改或重排，请重新生成路线链接并复核时间。</li></ul>
+</div>
+
+<div class="card">
+  <h2>来源链接</h2>
+  <ul><li><a href="https://api.anitabi.cn/bangumi/27364/points/detail?haveImage=true" target="_blank">https://api.anitabi.cn/bangumi/27364/points/detail?haveImage=true</a></li><li><a href="https://api.open-meteo.com/v1/forecast" target="_blank">https://api.open-meteo.com/v1/forecast</a></li><li><a href="https://bgm.tv/subject/27364" target="_blank">https://bgm.tv/subject/27364</a></li></ul>
+</div>
+
+<script>
+const MAX_POINTS_PER_GOOGLE_MAPS_URL = 11;
+const TRIP_START_TIME = "09:00";
+const TRIP_END_TIME = "18:00";
+const MAX_WALKING_KM = 1.5;
+let draggedRow = null;
+
+function mapsDirUrl(coords, mode = 'walking') {
+  if (coords.length < 2) return '';
+  const params = new URLSearchParams();
+  params.set('api', '1');
+  params.set('origin', coords[0]);
+  params.set('destination', coords[coords.length - 1]);
+  params.set('travelmode', mode);
+  if (coords.length > 2) params.set('waypoints', coords.slice(1, -1).join('|'));
+  return 'https://www.google.com/maps/dir/?' + params.toString();
+}
+
+function singleSegmentUrl(a, b, mode = 'walking') {
+  const params = new URLSearchParams();
+  params.set('api', '1');
+  params.set('origin', a.lat + ',' + a.lng);
+  params.set('destination', b.lat + ',' + b.lng);
+  params.set('travelmode', mode === 'transit' ? 'transit' : 'walking');
+  return 'https://www.google.com/maps/dir/?' + params.toString();
+}
+
+function collectStopRows() {
+  return Array.from(document.querySelectorAll('#stops tbody tr'));
+}
+
+function rowData(row) {
+  return {
+    pointId: row.dataset.pointId || '',
+    name: row.dataset.name || '',
+    lat: row.dataset.lat || '',
+    lng: row.dataset.lng || '',
+    photo: row.dataset.photo || '',
+    notes: row.dataset.notes || '',
+    stayMin: parseInt((row.querySelector('.stay')?.textContent || row.dataset.stayMin || '20').trim(), 10) || 20,
+  };
+}
+
+function collectCoords() {
+  return collectStopRows().map(row => [row.dataset.lat, row.dataset.lng]).filter(pair => pair[0] && pair[1]).map(pair => pair[0] + ',' + pair[1]);
+}
+
+function rebuildOverallRouteLinks() {
+  const coords = collectCoords();
+  const main = document.getElementById('overallRouteMain');
+  const list = document.getElementById('overallRouteParts');
+  list.innerHTML = '';
+  if (coords.length < 2) {
+    main.removeAttribute('href');
+    main.textContent = '当前主路线少于两个有效坐标，暂时无法生成整条路线链接。';
+    return;
+  }
+  let chunks = [];
+  for (let start = 0; start < coords.length - 1;) {
+    const end = Math.min(start + MAX_POINTS_PER_GOOGLE_MAPS_URL, coords.length);
+    chunks.push(coords.slice(start, end));
+    if (end >= coords.length) break;
+    start = end - 1;
+  }
+  main.href = mapsDirUrl(chunks[0], 'walking');
+  main.textContent = '打开当前整条路线';
+  chunks.forEach((chunk, i) => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = mapsDirUrl(chunk, 'walking');
+    a.target = '_blank';
+    a.textContent = `打开第 ${i + 1} 段路线（${chunk.length} 个点位）`;
+    li.appendChild(a);
+    list.appendChild(li);
+  });
+}
+
+function formatMin(total) {
+  total = Math.round(total);
+  const h = Math.floor(total / 60) % 24;
+  const m = total % 60;
+  return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0');
+}
+
+function parseHHMM(text, fallback) {
+  const m = String(text || '').match(/(\d{1,2}):(\d{2})/);
+  if (!m) return fallback;
+  return parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+}
+
+function haversineKm(a, b) {
+  const R = 6371;
+  const lat1 = Number(a.lat), lon1 = Number(a.lng), lat2 = Number(b.lat), lon2 = Number(b.lng);
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const p1 = lat1 * Math.PI / 180;
+  const p2 = lat2 * Math.PI / 180;
+  const x = Math.sin(dLat / 2) ** 2 + Math.cos(p1) * Math.cos(p2) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
+}
+
+async function tryOsrmWalking(a, b) {
+  const url = `https://router.project-osrm.org/route/v1/foot/${a.lng},${a.lat};${b.lng},${b.lat}?overview=false`;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const data = await res.json();
+    const route = data.routes && data.routes[0];
+    if (!route) return null;
+    return {
+      minutes: Math.max(1, Math.round(route.duration / 60)),
+      distanceKm: route.distance / 1000,
+      source: 'OSRM / OpenStreetMap 步行估算'
+    };
+  } catch (err) {
+    return null;
+  }
+}
+
+async function estimateLeg(a, b) {
+  const straight = haversineKm(a, b);
+  if (straight <= MAX_WALKING_KM) {
+    const osrm = await tryOsrmWalking(a, b);
+    if (osrm) return { ...osrm, mode: 'walking', manual: false };
+    return {
+      distanceKm: straight * 1.25,
+      minutes: Math.max(3, Math.round(straight * 1.25 / 4.2 * 60)),
+      mode: 'walking',
+      manual: true,
+      source: '按直线距离放大后的步行估算，需再到地图中确认'
+    };
+  }
+  return {
+    distanceKm: straight,
+    minutes: Math.max(12, Math.round(straight * 8 + 12)),
+    mode: 'transit',
+    manual: true,
+    source: '超过单段步行上限，已按公共交通/打车的粗略耗时估算，需到 Google Maps 中确认'
+  };
+}
+
+function updateOrders() {
+  collectStopRows().forEach((row, i) => {
+    const order = row.querySelector('.order');
+    if (order) order.textContent = String(i + 1);
+  });
+}
+
+function deleteStopRow(btn) {
+  const row = btn.closest('tr');
+  if (row) row.remove();
+  updateOrders();
+  rebuildOverallRouteLinks();
+  recalculateSchedule();
+}
+
+function createStopRowFromData(d) {
+  const tr = document.createElement('tr');
+  tr.draggable = true;
+  tr.className = 'stop-row';
+  tr.dataset.pointId = d.pointId || '';
+  tr.dataset.lat = d.lat || '';
+  tr.dataset.lng = d.lng || '';
+  tr.dataset.name = d.name || '';
+  tr.dataset.photo = d.photo || '';
+  tr.dataset.notes = d.notes || '';
+  tr.dataset.stayMin = d.stayMin || '20';
+  const photoHtml = d.photo ? `<a href="${d.photo}" target="_blank">参考图</a>` : '';
+  const murl = d.lat && d.lng ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(d.lat + ',' + d.lng) : '';
+  tr.innerHTML = `
+    <td class="order" contenteditable="true"></td>
+    <td class="arrival" contenteditable="true"></td>
+    <td class="departure" contenteditable="true"></td>
+    <td class="stay" contenteditable="true">${d.stayMin || 20}</td>
+    <td class="place" contenteditable="true"><strong>${d.name || ''}</strong><br><small>${d.lat || ''}, ${d.lng || ''}</small><br><small>状态：手动加入</small></td>
+    <td class="notes" contenteditable="true">${d.notes || ''}<br>${photoHtml}</td>
+    <td contenteditable="true">待确认<br><small>营业时间请手动确认</small></td>
+    <td contenteditable="true">门票：待确认<br>均价：待确认</td>
+    <td>${murl ? `<a href="${murl}" target="_blank">地图</a>` : ''}</td>
+    <td><button onclick="deleteStopRow(this)">删除</button></td>`;
+  bindStopRowDrag(tr);
+  return tr;
+}
+
+function addOmittedRow(row, beforeRow = null) {
+  if (!row) return;
+  const d = {
+    pointId: row.dataset.pointId || '',
+    name: row.dataset.name || '',
+    lat: row.dataset.lat || '',
+    lng: row.dataset.lng || '',
+    photo: row.dataset.photo || '',
+    notes: row.dataset.notes || '',
+    stayMin: row.dataset.stayMin || '20'
+  };
+  const tr = createStopRowFromData(d);
+  const tbody = document.querySelector('#stops tbody');
+  if (beforeRow) tbody.insertBefore(tr, beforeRow); else tbody.appendChild(tr);
+  row.remove();
+  updateOrders();
+  rebuildOverallRouteLinks();
+  recalculateSchedule();
+}
+
+function bindStopRowDrag(row) {
+  row.addEventListener('dragstart', () => { draggedRow = row; });
+  row.addEventListener('dragover', event => { event.preventDefault(); row.classList.add('drag-over'); });
+  row.addEventListener('dragleave', () => row.classList.remove('drag-over'));
+  row.addEventListener('drop', event => {
+    event.preventDefault();
+    row.classList.remove('drag-over');
+    if (!draggedRow || draggedRow === row) return;
+    if (draggedRow.classList.contains('omitted-row')) addOmittedRow(draggedRow, row);
+    else document.querySelector('#stops tbody').insertBefore(draggedRow, row);
+    updateOrders();
+    rebuildOverallRouteLinks();
+    recalculateSchedule();
+  });
+}
+
+function bindOmittedDrag(row) {
+  row.addEventListener('dragstart', () => { draggedRow = row; });
+}
+
+function setupDragDrop() {
+  document.querySelectorAll('#stops tbody tr').forEach(bindStopRowDrag);
+  document.querySelectorAll('#omitted tbody tr').forEach(bindOmittedDrag);
+  const tbody = document.querySelector('#stops tbody');
+  if (!tbody) return;
+  tbody.addEventListener('dragover', event => event.preventDefault());
+  tbody.addEventListener('drop', event => {
+    event.preventDefault();
+    if (!draggedRow) return;
+    if (draggedRow.classList.contains('omitted-row')) addOmittedRow(draggedRow);
+    else tbody.appendChild(draggedRow);
+    updateOrders();
+    rebuildOverallRouteLinks();
+    recalculateSchedule();
+  });
+}
+
+function formatEndStatus(current, endLimit, manualCount) {
+  const overtime = endLimit && current > endLimit ? `，已超过结束时间约 ${Math.round(current - endLimit)} 分钟` : '';
+  const manualText = manualCount ? `其中 ${manualCount} 段仍是粗略估算，需到 Google Maps 中确认。` : '步行段已优先尝试使用 OSRM / OpenStreetMap 进行估算。';
+  return `已按当前顺序重算，预计最晚 ${String(Math.floor(current / 60)).padStart(2, '0')}:${String(Math.round(current % 60)).padStart(2, '0')} 结束${overtime}。${manualText}`;
+}
+
+async function recalculateSchedule() {
+  const rows = collectStopRows();
+  const start = parseHHMM(TRIP_START_TIME, 9 * 60);
+  const endLimit = parseHHMM(TRIP_END_TIME, 18 * 60);
+  const segBody = document.querySelector('#segments tbody');
+  if (segBody) segBody.innerHTML = '';
+  let current = start;
+  let manualCount = 0;
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    row.classList.remove('over-time');
+    if (i > 0) {
+      const prev = rowData(rows[i - 1]);
+      const cur = rowData(row);
+      const leg = await estimateLeg(prev, cur);
+      current += leg.minutes;
+      if (leg.manual) manualCount += 1;
+      if (segBody) {
+        const tr = document.createElement('tr');
+        const modeText = leg.mode === 'transit' ? '公共交通' : '步行';
+        tr.innerHTML = `<td>${i}</td><td>${prev.name}</td><td>${cur.name}</td><td>${modeText}</td><td>${leg.distanceKm.toFixed(2)} km</td><td>${leg.minutes} 分钟<br><small>${leg.source}</small></td><td><a href="${singleSegmentUrl(prev, cur, leg.mode)}" target="_blank">路线</a></td>`;
+        segBody.appendChild(tr);
+      }
+    }
+    const stay = parseInt((row.querySelector('.stay')?.textContent || '20').trim(), 10) || 20;
+    row.dataset.stayMin = String(stay);
+    const arrivalCell = row.querySelector('.arrival');
+    const departureCell = row.querySelector('.departure');
+    if (arrivalCell) arrivalCell.textContent = formatMin(current);
+    current += stay;
+    if (departureCell) departureCell.textContent = formatMin(current);
+    if (endLimit && current > endLimit) row.classList.add('over-time');
+  }
+  updateOrders();
+  const status = document.getElementById('scheduleStatus');
+  if (status) status.textContent = formatEndStatus(current, endLimit, manualCount);
+}
+
+function formatMin(total) {
+  total = Math.round(total);
+  const h = Math.floor(total / 60) % 24;
+  const m = total % 60;
+  return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0');
+}
+
+function exportText() {
+  const blob = new Blob([document.body.innerText], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'pilgrimage-itinerary.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+setupDragDrop();
+updateOrders();
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+# Runtime generated outputs
+
+output/
+
+# Environment variables and secrets
+
+.env
+.env.*
+*.key
+
+# Python cache
+
+**pycache**/
+*.pyc
+*.pyo
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+
+# System files
+
+.DS_Store
+Thumbs.db
+
+# Editor and IDE files
+
+.vscode/
+.idea/
+
+# Temporary files
+
+*.tmp
+*.log
