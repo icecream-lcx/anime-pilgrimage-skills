@@ -1,0 +1,1949 @@
+{
+  "stage": "route_weather_plan",
+  "output_language": {
+    "primary": "zh-CN",
+    "secondary": null,
+    "mode": "single",
+    "source": "inferred"
+  },
+  "work": {
+    "bangumi_id": 27364,
+    "title": "冰菓",
+    "aliases": [
+      "氷菓",
+      "Hyouka"
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/27364"
+    ]
+  },
+  "trip_profile": {
+    "date": "2026-06-19",
+    "date_range": [
+      "2026-06-19",
+      "2026-06-20"
+    ],
+    "timezone": "Asia/Tokyo",
+    "local_start_time": "09:00",
+    "local_end_time": "18:00",
+    "start_place": "高山站",
+    "end_place": "高山站",
+    "hotel_or_base": "高山站周边",
+    "start_location": {
+      "name": "高山站",
+      "address": "Takayama Station, Gifu, Japan",
+      "lat": 36.141126,
+      "lng": 137.2512848
+    },
+    "end_location": {
+      "name": "高山站",
+      "address": "Takayama Station, Gifu, Japan",
+      "lat": 36.141126,
+      "lng": 137.2512848
+    },
+    "end_location_policy": "return_to_start",
+    "transport_preferences": [
+      "walk",
+      "transit"
+    ],
+    "mobility": {
+      "max_walking_distance_km": 1.5,
+      "walking_distance_source": "default",
+      "switch_to_transit_if_exceeded": true
+    },
+    "map_access": {
+      "has_google_maps_api": false,
+      "map_mode": "google_maps_url_only",
+      "api_key_env_var": null,
+      "fallback_notice": "当前未配置 GOOGLE_MAPS_API_KEY，因此本计划只能提供 Google Maps 链接，公交时长、营业时间、评分与价格等信息需要出发前手动确认。",
+      "map_mode_display": "仅提供 Google Maps 链接"
+    },
+    "pace": "普通节奏",
+    "meal_preferences": null,
+    "must_visit": [],
+    "avoid": [],
+    "budget_note": null
+  },
+  "points": [
+    {
+      "id": "ozj8t9728",
+      "name": "上学道",
+      "lat": 36.1566,
+      "lng": 137.2581,
+      "address": null,
+      "episode": "1",
+      "scene_time": "3",
+      "image_url": "https://image.anitabi.cn/user/2111/bangumi/27364/points/ozj8t9728-1728634530993.jpg?plan=h160",
+      "origin": "Anitabi@双叶理央",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c0v9",
+      "name": "神山高校",
+      "lat": 36.1563,
+      "lng": 137.2579,
+      "address": null,
+      "episode": "1",
+      "scene_time": "14",
+      "image_url": "https://image.anitabi.cn/points/27364/7ek5c0v9.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.156328%2C137.257948&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.156328%2C137.257948&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0rz",
+      "name": "OP1 场景（本町4商店街駐車場）",
+      "lat": 36.1454,
+      "lng": 137.2568,
+      "address": null,
+      "episode": "1",
+      "scene_time": "281",
+      "image_url": "https://image.anitabi.cn/user/1079/bangumi/27364/points/7ek5c0rz-1714998249396.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.145469%2C137.256835&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.145469%2C137.256835&z=17"
+      ]
+    },
+    {
+      "id": "rno7fzcnt",
+      "name": "猫鱼雕像",
+      "lat": 36.1411,
+      "lng": 137.2582,
+      "address": null,
+      "episode": "1",
+      "scene_time": "284",
+      "image_url": "https://image.anitabi.cn/user/1028/bangumi/27364/points/rno7fzcnt-1736168349049.jpg?plan=h160",
+      "origin": "Anitabi@pshow",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c0tg",
+      "name": "鍛冶橋交差点",
+      "lat": 36.1429,
+      "lng": 137.2575,
+      "address": null,
+      "episode": "1",
+      "scene_time": "1522",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/2.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.142978%2C137.257551&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.142978%2C137.257551&z=17"
+      ]
+    },
+    {
+      "id": "7emmn40i",
+      "name": "神山神社石狮",
+      "lat": 36.1379,
+      "lng": 137.256,
+      "address": null,
+      "episode": "2",
+      "scene_time": "2",
+      "image_url": "https://image.anitabi.cn/points/27364/7emmn40i.jpg?plan=h160",
+      "origin": "Anitabi@卜卜口",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c04k",
+      "name": "猫鱼",
+      "lat": 36.1425,
+      "lng": 137.2578,
+      "address": null,
+      "episode": "2",
+      "scene_time": "99",
+      "image_url": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c04k-1673008391472.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.142504%2C137.257803&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.142504%2C137.257803&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0da",
+      "name": "4 话行车路线",
+      "lat": 36.1414,
+      "lng": 137.2652,
+      "address": null,
+      "episode": "4",
+      "scene_time": "223",
+      "image_url": "https://image.anitabi.cn/user/1079/bangumi/27364/points/7ek5c0da-1714998958624.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.14147%2C137.265206&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.14147%2C137.265206&z=17"
+      ]
+    },
+    {
+      "id": "59orvui2a",
+      "name": "不动桥",
+      "lat": 36.1487,
+      "lng": 137.2566,
+      "address": null,
+      "episode": "4",
+      "scene_time": "428",
+      "image_url": "https://image.anitabi.cn/user/1000/bangumi/27364/points/59orvui2a-1673008001802.jpg?plan=h160",
+      "origin": "Anitabi@卜卜口",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "837zd8il8",
+      "name": "安田講堂",
+      "lat": 35.7134,
+      "lng": 139.7622,
+      "address": null,
+      "episode": "4",
+      "scene_time": "618",
+      "image_url": "https://image.anitabi.cn/points/27364/837zd8il8_1722728482677_cut.jpg?plan=h160",
+      "origin": "Anitabi@月即别",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c062",
+      "name": "5 话场景（寄信处）",
+      "lat": 36.1459,
+      "lng": 137.2567,
+      "address": null,
+      "episode": "5",
+      "scene_time": "1531",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c062-1719993523136.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.145941%2C137.256728&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.145941%2C137.256728&z=17"
+      ]
+    },
+    {
+      "id": "ozk1ruc0l",
+      "name": "OP1（水中阶梯？）",
+      "lat": 36.1456,
+      "lng": 137.2575,
+      "address": null,
+      "episode": "OP1",
+      "scene_time": null,
+      "image_url": "https://image.anitabi.cn/user/2111/bangumi/27364/points/ozk1ruc0l-1728636268347.jpg?plan=h160",
+      "origin": "Anitabi@双叶理央",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c0v5",
+      "name": "神社参道",
+      "lat": 36.1336,
+      "lng": 137.2592,
+      "address": null,
+      "episode": "6",
+      "scene_time": "159",
+      "image_url": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0v5-1673008129587.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.133666%2C137.259206&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.133666%2C137.259206&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0lp",
+      "name": "アルプス街道平湯",
+      "lat": 36.1909,
+      "lng": 137.552,
+      "address": null,
+      "episode": "7",
+      "scene_time": "164",
+      "image_url": "https://image.anitabi.cn/user/1028/bangumi/27364/points/7ek5c0lp-1736166623236.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.190923%2C137.55202&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.190923%2C137.55202&z=17"
+      ]
+    },
+    {
+      "id": "rnokbyeu4",
+      "name": "平湯バスターミナル足湯附近",
+      "lat": 36.1909,
+      "lng": 137.5516,
+      "address": null,
+      "episode": "7",
+      "scene_time": "172",
+      "image_url": "https://image.anitabi.cn/user/1028/bangumi/27364/points/rnokbyeu4-1736169079404.jpg?plan=h160",
+      "origin": "Anitabi@pshow",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c066",
+      "name": "青山荘",
+      "lat": 36.1924,
+      "lng": 137.5544,
+      "address": null,
+      "episode": "7",
+      "scene_time": "204",
+      "image_url": "https://image.anitabi.cn/user/1028/bangumi/27364/points/7ek5c066-1736166929114.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.19249%2C137.554455&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.19249%2C137.554455&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c071",
+      "name": "青山荘（馆内）",
+      "lat": 36.192,
+      "lng": 137.5526,
+      "address": null,
+      "episode": "7",
+      "scene_time": "213",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c071-1674098757238.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.192053%2C137.55261&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.192053%2C137.55261&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0ke",
+      "name": "去温泉的路上",
+      "lat": 36.1925,
+      "lng": 137.5541,
+      "address": null,
+      "episode": "7",
+      "scene_time": "342",
+      "image_url": "https://image.anitabi.cn/user/1028/bangumi/27364/points/7ek5c0ke-1736168788845.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.192514%2C137.554101&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.192514%2C137.554101&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0jh",
+      "name": "平湯民俗館和平湯神社岔路口",
+      "lat": 36.1921,
+      "lng": 137.554,
+      "address": null,
+      "episode": "7",
+      "scene_time": "385",
+      "image_url": "https://image.anitabi.cn/user/1028/bangumi/27364/points/7ek5c0jh-1736168676033.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.192133%2C137.554002&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.192133%2C137.554002&z=17"
+      ]
+    },
+    {
+      "id": "rnohuhy2g",
+      "name": "平湯の湯",
+      "lat": 36.1918,
+      "lng": 137.5543,
+      "address": null,
+      "episode": "7",
+      "scene_time": "1130",
+      "image_url": "https://image.anitabi.cn/user/1028/bangumi/27364/points/rnohuhy2g-1736168934829.jpg?plan=h160",
+      "origin": "Anitabi@pshow",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c0su",
+      "name": "古丘町楢窪地区(?)",
+      "lat": 36.3522,
+      "lng": 137.3065,
+      "address": null,
+      "episode": "8",
+      "scene_time": "512",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0su-1674099099332.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.352255%2C137.306598&z=17",
+      "tags": [
+        "restaurant",
+        "attraction",
+        "station",
+        "bridge",
+        "street",
+        "shop"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.352255%2C137.306598&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0oh",
+      "name": "恋合病院",
+      "lat": 36.1537,
+      "lng": 137.2572,
+      "address": null,
+      "episode": "8",
+      "scene_time": "1180",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0oh-1674098984191.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.153777%2C137.257234&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.153777%2C137.257234&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c04j",
+      "name": "8 话场景",
+      "lat": 36.1382,
+      "lng": 137.256,
+      "address": null,
+      "episode": "8",
+      "scene_time": "1274",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c04j-1716746943691.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.13826%2C137.256036&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.13826%2C137.256036&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0p2",
+      "name": "9 话场景（八百屋）",
+      "lat": 36.1457,
+      "lng": 137.2567,
+      "address": null,
+      "episode": "9",
+      "scene_time": "1410",
+      "image_url": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0p2-1732877170719.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.14577%2C137.256792&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.14577%2C137.256792&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0ru",
+      "name": "喫茶一二三",
+      "lat": 36.1416,
+      "lng": 137.2596,
+      "address": null,
+      "episode": "10",
+      "scene_time": "1",
+      "image_url": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0ru-1673008192510.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.141637%2C137.259627&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.141637%2C137.259627&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0tb",
+      "name": "本町2丁目",
+      "lat": 36.1422,
+      "lng": 137.2578,
+      "address": null,
+      "episode": "10",
+      "scene_time": "481",
+      "image_url": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0tb-1732877757354.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.142246%2C137.257811&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.142246%2C137.257811&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0ff",
+      "name": "宮川朝市",
+      "lat": 36.145,
+      "lng": 137.2579,
+      "address": null,
+      "episode": "11",
+      "scene_time": "102",
+      "image_url": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0ff-1673008080221.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.14509%2C137.257902&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.14509%2C137.257902&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0vv",
+      "name": "宮川河川敷",
+      "lat": 36.1456,
+      "lng": 137.2574,
+      "address": null,
+      "episode": "11",
+      "scene_time": "392",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0vv-1719993407384.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.145601%2C137.257415&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.145601%2C137.257415&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c077",
+      "name": "11 话场景（TOILET）",
+      "lat": 36.1436,
+      "lng": 137.2574,
+      "address": null,
+      "episode": "11",
+      "scene_time": "586",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c077-1719993369584.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.143604%2C137.257468&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.143604%2C137.257468&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0iu",
+      "name": "11.5 话场景（市民游泳池）",
+      "lat": 36.1578,
+      "lng": 137.2318,
+      "address": null,
+      "episode": "EP11.5",
+      "scene_time": "308",
+      "image_url": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0iu-1732878110407.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.157809%2C137.231882&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.157809%2C137.231882&z=17"
+      ]
+    },
+    {
+      "id": "42bcmtp",
+      "name": "赤保木公園停车场门口",
+      "lat": 36.1584,
+      "lng": 137.2326,
+      "address": null,
+      "episode": "EP11.5",
+      "scene_time": "286",
+      "image_url": "https://image.anitabi.cn/user/1000/bangumi/27364/points/42bcmtp-1755857531158.jpg?plan=h160",
+      "origin": "Anitabi@卜卜口",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c0br",
+      "name": "12 话场景（桥）",
+      "lat": 36.086,
+      "lng": 137.2507,
+      "address": null,
+      "episode": "12",
+      "scene_time": "47",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0br-1765471151303.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.086017%2C137.250765&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.086017%2C137.250765&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0bb",
+      "name": "荒楠神社",
+      "lat": 36.1328,
+      "lng": 137.261,
+      "address": null,
+      "episode": "19",
+      "scene_time": "85",
+      "image_url": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0bb-1673008157926.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.132884%2C137.261038&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.132884%2C137.261038&z=17"
+      ]
+    },
+    {
+      "id": "rnnbjfvwp",
+      "name": "日枝神社社务所",
+      "lat": 36.1327,
+      "lng": 137.2613,
+      "address": null,
+      "episode": "20",
+      "scene_time": "344",
+      "image_url": "https://image.anitabi.cn/user/1028/bangumi/27364/points/rnnbjfvwp-1736166443680.jpg?plan=h160",
+      "origin": "Anitabi@pshow",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "7ek5c0is",
+      "name": "21 话场景（跨线桥）",
+      "lat": 36.1383,
+      "lng": 137.2515,
+      "address": null,
+      "episode": "21",
+      "scene_time": "1320",
+      "image_url": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0is-1732884632338.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.138386%2C137.251575&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.138386%2C137.251575&z=17"
+      ]
+    },
+    {
+      "id": "7ek5c0bn",
+      "name": "22 话场景（水无神社）",
+      "lat": 36.0853,
+      "lng": 137.2518,
+      "address": null,
+      "episode": "22",
+      "scene_time": "876",
+      "image_url": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0bn-1732885766093.jpg?plan=h160",
+      "origin": "Google Maps",
+      "origin_url": "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.085315%2C137.251854&z=17",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://www.google.com/maps/d/viewer?mid=1-xhK9xXBighgJMVK-M8OxkKh5i4&ll=36.085315%2C137.251854&z=17"
+      ]
+    },
+    {
+      "id": "mjon95r1d",
+      "name": "卧龙樱",
+      "lat": 36.0888,
+      "lng": 137.2478,
+      "address": null,
+      "episode": "22",
+      "scene_time": "1432",
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/mjon95r1d-1722606201974.jpg?plan=h160",
+      "origin": "Anitabi",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "414wgnu",
+      "name": "バグパイプ",
+      "lat": 36.1411,
+      "lng": 137.259,
+      "address": null,
+      "episode": "3",
+      "scene_time": "14",
+      "image_url": "https://image.anitabi.cn/user/2192/bangumi/27364/points/414wgnu-1755786192062.jpg?plan=h160",
+      "origin": "Anitabi@suichan1oshi",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "415j01y",
+      "name": "古い町並（上三之町）",
+      "lat": 36.1415,
+      "lng": 137.2595,
+      "address": null,
+      "episode": "10",
+      "scene_time": "1",
+      "image_url": "https://image.anitabi.cn/user/2192/bangumi/27364/points/415j01y-1755787235989.jpg?plan=h160",
+      "origin": "Anitabi@suichan1oshi",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "e5ab45x",
+      "name": "緞治橋交叉點",
+      "lat": 36.143,
+      "lng": 137.2576,
+      "address": null,
+      "episode": "18",
+      "scene_time": null,
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/e5ab45x-1777804987014.jpg?plan=h160",
+      "origin": "Anitabi",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "tohkn6rhs",
+      "name": "op中的大楼梯（绝版）",
+      "lat": 36.1447,
+      "lng": 137.2579,
+      "address": null,
+      "episode": "OP1",
+      "scene_time": null,
+      "image_url": "https://image.anitabi.cn/points/27364/tohkn6rhs_1741883146482.jpg?plan=h160",
+      "origin": "Anitabi",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "os8idl",
+      "name": "花里跨线桥东",
+      "lat": 36.1383,
+      "lng": 137.2516,
+      "address": null,
+      "episode": "21",
+      "scene_time": null,
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/os8idl-1748509061391.jpg?plan=h160",
+      "origin": "Anitabi",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "cwuduh0",
+      "name": "岐阜县高山水位观测站",
+      "lat": 36.1453,
+      "lng": 137.2578,
+      "address": null,
+      "episode": "OP",
+      "scene_time": null,
+      "image_url": "https://image.anitabi.cn/user/0/bangumi/27364/points/cwuduh0-1775118071002.jpg?plan=h160",
+      "origin": "Anitabi",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    },
+    {
+      "id": "u3z4mo7nc",
+      "name": "一般​社団​法人​飛騨・​高山​観光​コンベンション​協会",
+      "lat": 36.14,
+      "lng": 137.2587,
+      "address": null,
+      "episode": null,
+      "scene_time": null,
+      "image_url": "https://image.anitabi.cn/user/2192/bangumi/27364/points/u3z4mo7nc-1755786535729.jpg?plan=h160",
+      "origin": "Anitabi@甜食伯爵",
+      "origin_url": "https://anitabi.cn/",
+      "tags": [
+        "unknown"
+      ],
+      "source_urls": [
+        "https://anitabi.cn/"
+      ]
+    }
+  ],
+  "point_count": 44,
+  "weather": {
+    "summary": "2026-06-19（第 1 天）高山白天约 15.2-29.0°C，上午相对稳定，12:00 以后降雨概率会逐步升高，17:00 左右可到 80%。2026-06-20（第 2 天）约 17.0-21.0°C，09:00 起就有 41% 左右降雨概率，中午后升到 70%-90% 以上，建议把第 2 天视为雨天补点日，以公交或打车衔接为主。",
+    "source_urls": [
+      "https://api.open-meteo.com/v1/forecast"
+    ]
+  },
+  "routes": {
+    "route_a_full_all_points": {
+      "route_id": "A",
+      "route_type": "all_points",
+      "display_name": "Route A：全部 44 个有效点位总览",
+      "estimated_start": "09:00",
+      "estimated_end": "18:00",
+      "stops": [],
+      "omitted_points": [],
+      "source_urls": [
+        "https://bgm.tv/subject/27364",
+        "https://api.anitabi.cn/bangumi/27364/points/detail?haveImage=true"
+      ],
+      "route_type_display": "全点位路线",
+      "strategy_display": "完整保留全部有效点位，供你总览与二次筛选"
+    },
+    "route_b_time_fit_by_day": [
+      {
+        "route_id": "B_day_1",
+        "route_type": "time_fit",
+        "day_index": 1,
+        "date": "2026-06-19",
+        "display_name": "Route B 第 1 天：高山市区核心场景",
+        "estimated_start": "09:00",
+        "estimated_end": "17:49",
+        "stops": [
+          {
+            "order": 1,
+            "point_id": "7ek5c0v9",
+            "name": "神山高校",
+            "lat": 36.1563,
+            "lng": 137.2579,
+            "planned_arrival": "09:23",
+            "planned_departure": "09:43",
+            "photo_reference": "https://image.anitabi.cn/points/27364/7ek5c0v9.jpg?plan=h160",
+            "photo_notes": "EP1 / scene 14",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 2,
+            "point_id": "ozj8t9728",
+            "name": "上学道",
+            "lat": 36.1566,
+            "lng": 137.2581,
+            "planned_arrival": "09:47",
+            "planned_departure": "10:02",
+            "photo_reference": "https://image.anitabi.cn/user/2111/bangumi/27364/points/ozj8t9728-1728634530993.jpg?plan=h160",
+            "photo_notes": "EP1 / scene 3",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 3,
+            "point_id": "7ek5c0oh",
+            "name": "恋合病院",
+            "lat": 36.1537,
+            "lng": 137.2572,
+            "planned_arrival": "10:08",
+            "planned_departure": "10:23",
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0oh-1674098984191.jpg?plan=h160",
+            "photo_notes": "EP8 / scene 1180",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 4,
+            "point_id": "59orvui2a",
+            "name": "不动桥",
+            "lat": 36.1487,
+            "lng": 137.2566,
+            "planned_arrival": "10:33",
+            "planned_departure": "10:48",
+            "photo_reference": "https://image.anitabi.cn/user/1000/bangumi/27364/points/59orvui2a-1673008001802.jpg?plan=h160",
+            "photo_notes": "EP4 / scene 428",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 5,
+            "point_id": "7ek5c0rz",
+            "name": "OP1 场景（本町4商店街駐車場）",
+            "lat": 36.1454,
+            "lng": 137.2568,
+            "planned_arrival": "10:54",
+            "planned_departure": "11:09",
+            "photo_reference": "https://image.anitabi.cn/user/1079/bangumi/27364/points/7ek5c0rz-1714998249396.jpg?plan=h160",
+            "photo_notes": "EP1 / scene 281",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 6,
+            "point_id": "7ek5c062",
+            "name": "5 话场景（寄信处）",
+            "lat": 36.1459,
+            "lng": 137.2567,
+            "planned_arrival": "11:13",
+            "planned_departure": "11:28",
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c062-1719993523136.jpg?plan=h160",
+            "photo_notes": "EP5 / scene 1531",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 7,
+            "point_id": "7ek5c0ff",
+            "name": "宮川朝市",
+            "lat": 36.145,
+            "lng": 137.2579,
+            "planned_arrival": "11:32",
+            "planned_departure": "11:52",
+            "photo_reference": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0ff-1673008080221.jpg?plan=h160",
+            "photo_notes": "EP11 / scene 102",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 8,
+            "point_id": "7ek5c0vv",
+            "name": "宮川河川敷",
+            "lat": 36.1456,
+            "lng": 137.2574,
+            "planned_arrival": "11:56",
+            "planned_departure": "12:11",
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c0vv-1719993407384.jpg?plan=h160",
+            "photo_notes": "EP11 / scene 392",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 9,
+            "point_id": "rno7fzcnt",
+            "name": "猫鱼雕像",
+            "lat": 36.1411,
+            "lng": 137.2582,
+            "planned_arrival": "12:20",
+            "planned_departure": "12:35",
+            "photo_reference": "https://image.anitabi.cn/user/1028/bangumi/27364/points/rno7fzcnt-1736168349049.jpg?plan=h160",
+            "photo_notes": "EP1 / scene 284",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 10,
+            "point_id": "7ek5c0ru",
+            "name": "喫茶一二三",
+            "lat": 36.1416,
+            "lng": 137.2596,
+            "planned_arrival": "12:39",
+            "planned_departure": "13:24",
+            "photo_reference": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0ru-1673008192510.jpg?plan=h160",
+            "photo_notes": "EP10 / scene 1",
+            "weather_note": "第 1 天上午更适合拍户外镜头，尽量在中午前完成核心街景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 11,
+            "point_id": "415j01y",
+            "name": "古い町並（上三之町）",
+            "lat": 36.1415,
+            "lng": 137.2595,
+            "planned_arrival": "13:28",
+            "planned_departure": "13:43",
+            "photo_reference": "https://image.anitabi.cn/user/2192/bangumi/27364/points/415j01y-1755787235989.jpg?plan=h160",
+            "photo_notes": "EP10 / scene 1",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 12,
+            "point_id": "7ek5c0tg",
+            "name": "鍛冶橋交差点",
+            "lat": 36.1429,
+            "lng": 137.2575,
+            "planned_arrival": "13:47",
+            "planned_departure": "14:02",
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/2.jpg?plan=h160",
+            "photo_notes": "EP1 / scene 1522",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 13,
+            "point_id": "7ek5c0tb",
+            "name": "本町2丁目",
+            "lat": 36.1422,
+            "lng": 137.2578,
+            "planned_arrival": "14:06",
+            "planned_departure": "14:21",
+            "photo_reference": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0tb-1732877757354.jpg?plan=h160",
+            "photo_notes": "EP10 / scene 481",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 14,
+            "point_id": "7emmn40i",
+            "name": "神山神社石狮",
+            "lat": 36.1379,
+            "lng": 137.256,
+            "planned_arrival": "14:30",
+            "planned_departure": "14:45",
+            "photo_reference": "https://image.anitabi.cn/points/27364/7emmn40i.jpg?plan=h160",
+            "photo_notes": "EP2 / scene 2",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 15,
+            "point_id": "7ek5c04j",
+            "name": "8 话场景",
+            "lat": 36.1382,
+            "lng": 137.256,
+            "planned_arrival": "14:49",
+            "planned_departure": "15:04",
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c04j-1716746943691.jpg?plan=h160",
+            "photo_notes": "EP8 / scene 1274",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 16,
+            "point_id": "7ek5c0v5",
+            "name": "神社参道",
+            "lat": 36.1336,
+            "lng": 137.2592,
+            "planned_arrival": "15:14",
+            "planned_departure": "15:29",
+            "photo_reference": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0v5-1673008129587.jpg?plan=h160",
+            "photo_notes": "EP6 / scene 159",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 17,
+            "point_id": "7ek5c0bb",
+            "name": "荒楠神社",
+            "lat": 36.1328,
+            "lng": 137.261,
+            "planned_arrival": "15:33",
+            "planned_departure": "15:53",
+            "photo_reference": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c0bb-1673008157926.jpg?plan=h160",
+            "photo_notes": "EP19 / scene 85",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 18,
+            "point_id": "rnnbjfvwp",
+            "name": "日枝神社社务所",
+            "lat": 36.1327,
+            "lng": 137.2613,
+            "planned_arrival": "15:57",
+            "planned_departure": "16:17",
+            "photo_reference": "https://image.anitabi.cn/user/1028/bangumi/27364/points/rnnbjfvwp-1736166443680.jpg?plan=h160",
+            "photo_notes": "EP20 / scene 344",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 19,
+            "point_id": "7ek5c04k",
+            "name": "猫鱼",
+            "lat": 36.1425,
+            "lng": 137.2578,
+            "planned_arrival": "16:37",
+            "planned_departure": "16:52",
+            "photo_reference": "https://image.anitabi.cn/user/1000/bangumi/27364/points/7ek5c04k-1673008391472.jpg?plan=h160",
+            "photo_notes": "EP2 / scene 99",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 20,
+            "point_id": "414wgnu",
+            "name": "バグパイプ",
+            "lat": 36.1411,
+            "lng": 137.259,
+            "planned_arrival": "16:56",
+            "planned_departure": "17:11",
+            "photo_reference": "https://image.anitabi.cn/user/2192/bangumi/27364/points/414wgnu-1755786192062.jpg?plan=h160",
+            "photo_notes": "EP3 / scene 14",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 21,
+            "point_id": "e5ab45x",
+            "name": "緞治橋交叉點",
+            "lat": 36.143,
+            "lng": 137.2576,
+            "planned_arrival": "17:15",
+            "planned_departure": "17:30",
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/e5ab45x-1777804987014.jpg?plan=h160",
+            "photo_notes": "EP18",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 22,
+            "point_id": "cwuduh0",
+            "name": "岐阜县高山水位观测站",
+            "lat": 36.1453,
+            "lng": 137.2578,
+            "planned_arrival": "17:34",
+            "planned_departure": "17:49",
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/cwuduh0-1775118071002.jpg?plan=h160",
+            "photo_notes": "EPOP",
+            "weather_note": "第 1 天下午降雨概率会上升，请随身带好雨具。",
+            "schedule_status": "按计划"
+          }
+        ],
+        "omitted_points": [
+          {
+            "point_id": "7ek5c0da",
+            "name": "4 话行车路线",
+            "lat": 36.1414,
+            "lng": 137.2652,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "837zd8il8",
+            "name": "安田講堂",
+            "lat": 35.7134,
+            "lng": 139.7622,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "ozk1ruc0l",
+            "name": "OP1（水中阶梯？）",
+            "lat": 36.1456,
+            "lng": 137.2575,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0lp",
+            "name": "アルプス街道平湯",
+            "lat": 36.1909,
+            "lng": 137.552,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "rnokbyeu4",
+            "name": "平湯バスターミナル足湯附近",
+            "lat": 36.1909,
+            "lng": 137.5516,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "7ek5c066",
+            "name": "青山荘",
+            "lat": 36.1924,
+            "lng": 137.5544,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "7ek5c071",
+            "name": "青山荘（馆内）",
+            "lat": 36.192,
+            "lng": 137.5526,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "7ek5c0ke",
+            "name": "去温泉的路上",
+            "lat": 36.1925,
+            "lng": 137.5541,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "7ek5c0jh",
+            "name": "平湯民俗館和平湯神社岔路口",
+            "lat": 36.1921,
+            "lng": 137.554,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "rnohuhy2g",
+            "name": "平湯の湯",
+            "lat": 36.1918,
+            "lng": 137.5543,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "7ek5c0su",
+            "name": "古丘町楢窪地区(?)",
+            "lat": 36.3522,
+            "lng": 137.3065,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "7ek5c0p2",
+            "name": "9 话场景（八百屋）",
+            "lat": 36.1457,
+            "lng": 137.2567,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c077",
+            "name": "11 话场景（TOILET）",
+            "lat": 36.1436,
+            "lng": 137.2574,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0iu",
+            "name": "11.5 话场景（市民游泳池）",
+            "lat": 36.1578,
+            "lng": 137.2318,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "42bcmtp",
+            "name": "赤保木公園停车场门口",
+            "lat": 36.1584,
+            "lng": 137.2326,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0br",
+            "name": "12 话场景（桥）",
+            "lat": 36.086,
+            "lng": 137.2507,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0is",
+            "name": "21 话场景（跨线桥）",
+            "lat": 36.1383,
+            "lng": 137.2515,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0bn",
+            "name": "22 话场景（水无神社）",
+            "lat": 36.0853,
+            "lng": 137.2518,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "mjon95r1d",
+            "name": "卧龙樱",
+            "lat": 36.0888,
+            "lng": 137.2478,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "tohkn6rhs",
+            "name": "op中的大楼梯（绝版）",
+            "lat": 36.1447,
+            "lng": 137.2579,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "os8idl",
+            "name": "花里跨线桥东",
+            "lat": 36.1383,
+            "lng": 137.2516,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "u3z4mo7nc",
+            "name": "一般​社団​法人​飛騨・​高山​観光​コンベンション​協会",
+            "lat": 36.14,
+            "lng": 137.2587,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          }
+        ],
+        "source_urls": [
+          "https://bgm.tv/subject/27364",
+          "https://api.anitabi.cn/bangumi/27364/points/detail?haveImage=true",
+          "https://api.open-meteo.com/v1/forecast"
+        ],
+        "route_type_display": "时间适配路线",
+        "strategy_display": "优先覆盖高山站、古街、宫川与日枝神社一带的密集核心点"
+      },
+      {
+        "route_id": "B_day_2",
+        "route_type": "time_fit",
+        "day_index": 2,
+        "date": "2026-06-20",
+        "display_name": "Route B 第 2 天：雨天补点与郊外补完",
+        "estimated_start": "09:00",
+        "estimated_end": "17:43",
+        "stops": [
+          {
+            "order": 1,
+            "point_id": "7ek5c0lp",
+            "name": "アルプス街道平湯",
+            "lat": 36.1909,
+            "lng": 137.552,
+            "planned_arrival": "10:15",
+            "planned_departure": "10:30",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1028/bangumi/27364/points/7ek5c0lp-1736166623236.jpg?plan=h160",
+            "photo_notes": "EP7 / scene 164",
+            "weather_note": "09:00 从高山站出发后，先用公交前往平汤片区，默认这是雨天也较容易串联的一组外景。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 2,
+            "point_id": "rnokbyeu4",
+            "name": "平湯バスターミナル足湯附近",
+            "lat": 36.1909,
+            "lng": 137.5516,
+            "planned_arrival": "10:34",
+            "planned_departure": "10:49",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1028/bangumi/27364/points/rnokbyeu4-1736169079404.jpg?plan=h160",
+            "photo_notes": "EP7 / scene 172",
+            "weather_note": "足汤附近点位相距很近，适合连续快拍。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 3,
+            "point_id": "7ek5c066",
+            "name": "青山荘",
+            "lat": 36.1924,
+            "lng": 137.5544,
+            "planned_arrival": "10:53",
+            "planned_departure": "11:08",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1028/bangumi/27364/points/7ek5c066-1736166929114.jpg?plan=h160",
+            "photo_notes": "EP7 / scene 204",
+            "weather_note": "平汤片区雨天路面湿滑，建议控制停留时间。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 4,
+            "point_id": "7ek5c071",
+            "name": "青山荘（馆内）",
+            "lat": 36.192,
+            "lng": 137.5526,
+            "planned_arrival": "11:12",
+            "planned_departure": "11:27",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c071-1674098757238.jpg?plan=h160",
+            "photo_notes": "EP7 / scene 213",
+            "weather_note": "馆内相关镜头以对照构图为主。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 5,
+            "point_id": "7ek5c0ke",
+            "name": "去温泉的路上",
+            "lat": 36.1925,
+            "lng": 137.5541,
+            "planned_arrival": "11:31",
+            "planned_departure": "11:46",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1028/bangumi/27364/points/7ek5c0ke-1736168788845.jpg?plan=h160",
+            "photo_notes": "EP7 / scene 342",
+            "weather_note": "同一区域补点，尽量一口气完成。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 6,
+            "point_id": "7ek5c0jh",
+            "name": "平湯民俗館和平湯神社岔路口",
+            "lat": 36.1921,
+            "lng": 137.554,
+            "planned_arrival": "11:50",
+            "planned_departure": "12:05",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1028/bangumi/27364/points/7ek5c0jh-1736168676033.jpg?plan=h160",
+            "photo_notes": "EP7 / scene 385",
+            "weather_note": "岔路口镜头适合快速确认后离开。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 7,
+            "point_id": "rnohuhy2g",
+            "name": "平湯の湯",
+            "lat": 36.1918,
+            "lng": 137.5543,
+            "planned_arrival": "12:09",
+            "planned_departure": "12:29",
+            "stay_minutes": 20,
+            "photo_reference": "https://image.anitabi.cn/user/1028/bangumi/27364/points/rnohuhy2g-1736168934829.jpg?plan=h160",
+            "photo_notes": "EP7 / scene 1130",
+            "weather_note": "温泉周边作为平汤段收尾，之后回高山市区。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 8,
+            "point_id": "u3z4mo7nc",
+            "name": "一般​社団​法人​飛騨・​高山​観光​コンベンション​協会",
+            "lat": 36.14,
+            "lng": 137.2587,
+            "planned_arrival": "14:00",
+            "planned_departure": "14:15",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/2192/bangumi/27364/points/u3z4mo7nc-1755786535729.jpg?plan=h160",
+            "photo_notes": "EP? / scene ?",
+            "weather_note": "返回高山站附近后，补完站前与游客中心一带。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 9,
+            "point_id": "7ek5c0da",
+            "name": "4 话行车路线",
+            "lat": 36.1414,
+            "lng": 137.2652,
+            "planned_arrival": "14:22",
+            "planned_departure": "14:37",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1079/bangumi/27364/points/7ek5c0da-1714998958624.jpg?plan=h160",
+            "photo_notes": "EP4 / scene 223",
+            "weather_note": "站东侧补点，下午段默认以短距离移动为主。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 10,
+            "point_id": "ozk1ruc0l",
+            "name": "OP1（水中阶梯？）",
+            "lat": 36.1456,
+            "lng": 137.2575,
+            "planned_arrival": "14:44",
+            "planned_departure": "14:59",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/2111/bangumi/27364/points/ozk1ruc0l-1728636268347.jpg?plan=h160",
+            "photo_notes": "EPOP1 / scene ?",
+            "weather_note": "把 OP 相关的市区补点集中处理。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 11,
+            "point_id": "tohkn6rhs",
+            "name": "op中的大楼梯（绝版）",
+            "lat": 36.1447,
+            "lng": 137.2579,
+            "planned_arrival": "15:03",
+            "planned_departure": "15:18",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/points/27364/tohkn6rhs_1741883146482.jpg?plan=h160",
+            "photo_notes": "EPOP1 / scene ?",
+            "weather_note": "楼梯点位为旧镜头参考，现场以街景对照为主。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 12,
+            "point_id": "7ek5c0p2",
+            "name": "9 话场景（八百屋）",
+            "lat": 36.1457,
+            "lng": 137.2567,
+            "planned_arrival": "15:22",
+            "planned_departure": "15:37",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0p2-1732877170719.jpg?plan=h160",
+            "photo_notes": "EP9 / scene 1410",
+            "weather_note": "回到古街片区后顺路补掉八百屋镜头。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 13,
+            "point_id": "7ek5c077",
+            "name": "11 话场景（TOILET）",
+            "lat": 36.1436,
+            "lng": 137.2574,
+            "planned_arrival": "15:41",
+            "planned_departure": "15:56",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/7ek5c077-1719993369584.jpg?plan=h160",
+            "photo_notes": "EP11 / scene 586",
+            "weather_note": "雨天优先完成近距离点位。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 14,
+            "point_id": "os8idl",
+            "name": "花里跨线桥东",
+            "lat": 36.1383,
+            "lng": 137.2516,
+            "planned_arrival": "16:08",
+            "planned_departure": "16:23",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/0/bangumi/27364/points/os8idl-1748509061391.jpg?plan=h160",
+            "photo_notes": "EP21 / scene ?",
+            "weather_note": "花里跨线桥东属于第 2 天后半段的就近补点。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 15,
+            "point_id": "7ek5c0is",
+            "name": "21 话场景（跨线桥）",
+            "lat": 36.1383,
+            "lng": 137.2515,
+            "planned_arrival": "16:27",
+            "planned_departure": "16:42",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0is-1732884632338.jpg?plan=h160",
+            "photo_notes": "EP21 / scene 1320",
+            "weather_note": "与花里跨线桥东一起处理，节省折返。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 16,
+            "point_id": "7ek5c0iu",
+            "name": "11.5 话场景（市民游泳池）",
+            "lat": 36.1578,
+            "lng": 137.2318,
+            "planned_arrival": "17:04",
+            "planned_departure": "17:24",
+            "stay_minutes": 20,
+            "photo_reference": "https://image.anitabi.cn/user/1073/bangumi/27364/points/7ek5c0iu-1732878110407.jpg?plan=h160",
+            "photo_notes": "EPEP11.5 / scene 308",
+            "weather_note": "最后用乘车方式去市民游泳池方向补点。",
+            "schedule_status": "按计划"
+          },
+          {
+            "order": 17,
+            "point_id": "42bcmtp",
+            "name": "赤保木公園停车场门口",
+            "lat": 36.1584,
+            "lng": 137.2326,
+            "planned_arrival": "17:28",
+            "planned_departure": "17:43",
+            "stay_minutes": 15,
+            "photo_reference": "https://image.anitabi.cn/user/1000/bangumi/27364/points/42bcmtp-1755857531158.jpg?plan=h160",
+            "photo_notes": "EPEP11.5 / scene 286",
+            "weather_note": "停车场门口点位作为第 2 天收尾，之后返回高山站。",
+            "schedule_status": "按计划"
+          }
+        ],
+        "omitted_points": [
+          {
+            "point_id": "ozj8t9728",
+            "name": "上学道",
+            "lat": 36.1566,
+            "lng": 137.2581,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0v9",
+            "name": "神山高校",
+            "lat": 36.1563,
+            "lng": 137.2579,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0rz",
+            "name": "OP1 场景（本町4商店街駐車場）",
+            "lat": 36.1454,
+            "lng": 137.2568,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "rno7fzcnt",
+            "name": "猫鱼雕像",
+            "lat": 36.1411,
+            "lng": 137.2582,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0tg",
+            "name": "鍛冶橋交差点",
+            "lat": 36.1429,
+            "lng": 137.2575,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7emmn40i",
+            "name": "神山神社石狮",
+            "lat": 36.1379,
+            "lng": 137.256,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c04k",
+            "name": "猫鱼",
+            "lat": 36.1425,
+            "lng": 137.2578,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "59orvui2a",
+            "name": "不动桥",
+            "lat": 36.1487,
+            "lng": 137.2566,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "837zd8il8",
+            "name": "安田講堂",
+            "lat": 35.7134,
+            "lng": 139.7622,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "7ek5c062",
+            "name": "5 话场景（寄信处）",
+            "lat": 36.1459,
+            "lng": 137.2567,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0v5",
+            "name": "神社参道",
+            "lat": 36.1336,
+            "lng": 137.2592,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0su",
+            "name": "古丘町楢窪地区(?)",
+            "lat": 36.3522,
+            "lng": 137.3065,
+            "reason": "distance",
+            "reason_display": "距离过远"
+          },
+          {
+            "point_id": "7ek5c0oh",
+            "name": "恋合病院",
+            "lat": 36.1537,
+            "lng": 137.2572,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c04j",
+            "name": "8 话场景",
+            "lat": 36.1382,
+            "lng": 137.256,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0ru",
+            "name": "喫茶一二三",
+            "lat": 36.1416,
+            "lng": 137.2596,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0tb",
+            "name": "本町2丁目",
+            "lat": 36.1422,
+            "lng": 137.2578,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0ff",
+            "name": "宮川朝市",
+            "lat": 36.145,
+            "lng": 137.2579,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0vv",
+            "name": "宮川河川敷",
+            "lat": 36.1456,
+            "lng": 137.2574,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0br",
+            "name": "12 话场景（桥）",
+            "lat": 36.086,
+            "lng": 137.2507,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0bb",
+            "name": "荒楠神社",
+            "lat": 36.1328,
+            "lng": 137.261,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "rnnbjfvwp",
+            "name": "日枝神社社务所",
+            "lat": 36.1327,
+            "lng": 137.2613,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "7ek5c0bn",
+            "name": "22 话场景（水无神社）",
+            "lat": 36.0853,
+            "lng": 137.2518,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "mjon95r1d",
+            "name": "卧龙樱",
+            "lat": 36.0888,
+            "lng": 137.2478,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "414wgnu",
+            "name": "バグパイプ",
+            "lat": 36.1411,
+            "lng": 137.259,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "415j01y",
+            "name": "古い町並（上三之町）",
+            "lat": 36.1415,
+            "lng": 137.2595,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "e5ab45x",
+            "name": "緞治橋交叉點",
+            "lat": 36.143,
+            "lng": 137.2576,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          },
+          {
+            "point_id": "cwuduh0",
+            "name": "岐阜县高山水位观测站",
+            "lat": 36.1453,
+            "lng": 137.2578,
+            "reason": "time_limit",
+            "reason_display": "本次两天安排中未纳入"
+          }
+        ],
+        "source_urls": [
+          "https://bgm.tv/subject/27364",
+          "https://api.anitabi.cn/bangumi/27364/points/detail?haveImage=true",
+          "https://api.open-meteo.com/v1/forecast"
+        ],
+        "route_type_display": "时间适配路线",
+        "strategy_display": "09:00 先从高山站出发，再把剩余近郊补点集中到第 2 天，默认使用公交或打车衔接"
+      }
+    ]
+  },
+  "places": [
+    {
+      "point_id": "7ek5c0ff",
+      "name": "宮川朝市",
+      "category": "attraction",
+      "google_place_id": null,
+      "opening_hours": "待确认",
+      "open_on_trip_date": "待确认",
+      "ticket_price": "免费浏览，消费按现场为准",
+      "average_price": "待确认",
+      "official_url": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.145%2C137.2579",
+      "rating": null,
+      "price_level": null,
+      "api_data_available": false,
+      "verification_note": "营业时间与摊位状态可能随季节变化，请在出发前再次确认。",
+      "source_urls": [
+        "https://anitabi.cn/"
+      ],
+      "category_display": "景点"
+    },
+    {
+      "point_id": "7ek5c0ru",
+      "name": "喫茶一二三",
+      "category": "restaurant",
+      "google_place_id": null,
+      "opening_hours": "待确认",
+      "open_on_trip_date": "待确认",
+      "ticket_price": "待确认",
+      "average_price": "待确认",
+      "official_url": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.1416%2C137.2596",
+      "rating": null,
+      "price_level": null,
+      "api_data_available": false,
+      "verification_note": "咖啡店营业日与营业时段需要出发前手动确认。",
+      "source_urls": [
+        "https://anitabi.cn/"
+      ],
+      "category_display": "餐饮"
+    },
+    {
+      "point_id": "7ek5c0bb",
+      "name": "荒楠神社",
+      "category": "attraction",
+      "google_place_id": null,
+      "opening_hours": "待确认",
+      "open_on_trip_date": "待确认",
+      "ticket_price": "待确认",
+      "average_price": "待确认",
+      "official_url": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.1328%2C137.261",
+      "rating": null,
+      "price_level": null,
+      "api_data_available": false,
+      "verification_note": "神社社务所开放情况与祭典安排请以当天现场为准。",
+      "source_urls": [
+        "https://anitabi.cn/"
+      ],
+      "category_display": "景点"
+    },
+    {
+      "point_id": "rnnbjfvwp",
+      "name": "日枝神社社务所",
+      "category": "attraction",
+      "google_place_id": null,
+      "opening_hours": "待确认",
+      "open_on_trip_date": "待确认",
+      "ticket_price": "待确认",
+      "average_price": "待确认",
+      "official_url": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.1327%2C137.2613",
+      "rating": null,
+      "price_level": null,
+      "api_data_available": false,
+      "verification_note": "如果要买御守或盖印，请先确认社务所开放时段。",
+      "source_urls": [
+        "https://anitabi.cn/"
+      ],
+      "category_display": "景点"
+    }
+  ],
+  "map_mode": "google_maps_url_only",
+  "max_walking_distance_km": 1.5,
+  "warnings": [
+    "当前没有 GOOGLE_MAPS_API_KEY，因此无法自动获取实时公交时长、营业时间、评分和价格。",
+    "天气数据基于 2026-06-17 获取的 Open-Meteo 预报，出发前一晚建议再确认一次。",
+    "第 2 天降雨概率明显偏高，建议把机动时间留给公交、打车和躲雨。"
+  ],
+  "assumptions": [
+    "这次默认巡礼对象是 Bangumi 27364 的 TV 版《冰菓》，不是 OAD 条目 111762。",
+    "两天都以高山站作为出发点；因为你没有单独指定每天的终点，所以两天也都默认回到高山站结束。",
+    "默认以步行为主，单段超过 1.5 km 时改用公交或打车衔接。",
+    "Route A 继续完整保留所有有效点位，Route B 则拆成两天的可执行版本。"
+  ],
+  "source_urls": [
+    "https://bgm.tv/subject/27364",
+    "https://api.anitabi.cn/bangumi/27364/points/detail?haveImage=true",
+    "https://api.open-meteo.com/v1/forecast"
+  ],
+  "map_mode_display": "仅提供 Google Maps 链接"
+}
