@@ -61,7 +61,6 @@ anime-pilgrimage-skills/
 │       ├── pilgrimage-06-html-plan/
 │       └── shared/
 └── examples/
-    └── hyouka-demo/
 ```
 
 Main folders:
@@ -101,7 +100,7 @@ Keep the `shared/` folder next to the other skill folders, because the skills de
 ### All-in-one Skill
 
 ```text
-$anime-pilgrimage-all-in-one 帮我规划《孤独摇滚！》下北泽圣地巡礼，日期是 2026-07-10，上午 9 点到晚上 7 点，从下北泽站出发。
+$anime-pilgrimage-all-in-one 帮我规划《孤独摇滚！》下北泽圣地巡礼，日期是 2026-07-10，上午 9 点到晚上 7 点，从下北泽站出发，回到下北泽站。
 ```
 
 ### Step-by-step Skill Chain
@@ -164,7 +163,7 @@ In Google Maps URL-only mode, the local HTML cannot directly retrieve real-time 
 
 ## Example
 
-The `examples/hyouka-demo/` folder provides a sample pilgrimage planning result for *Hyouka*, including:
+The `examples/` folder provides a sample pilgrimage planning result for *Hyouka*, including:
 
 * Route A full landmark route.
 * Route B time-fit route.

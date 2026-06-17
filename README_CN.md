@@ -60,7 +60,6 @@ anime-pilgrimage-skills/
 │       ├── pilgrimage-06-html-plan/
 │       └── shared/
 └── examples/
-    └── hyouka-demo/
 ```
 
 主要目录说明：
@@ -100,7 +99,7 @@ $HOME/.agents/skills/
 ### 一站式调用
 
 ```text
-$anime-pilgrimage-all-in-one 帮我规划《孤独摇滚！》下北泽圣地巡礼，日期是 2026-07-10，上午 9 点到晚上 7 点，从下北泽站出发。
+$anime-pilgrimage-all-in-one 帮我规划《孤独摇滚！》下北泽圣地巡礼，日期是 2026-07-10，上午 9 点到晚上 7 点，从下北泽站出发，回到下北泽站。
 ```
 
 ### 分阶段调用
@@ -163,7 +162,7 @@ Route B 的 HTML 页面支持：
 
 ## 示例
 
-`examples/hyouka-demo/` 文件夹中提供了一个《冰菓》圣地巡礼规划示例，包括：
+`examples/` 文件夹中提供了一个《冰菓》圣地巡礼规划示例，包括：
 
 * Route A 全量点位路线。
 * Route B 时间适配路线。
