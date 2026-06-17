@@ -1,59 +1,81 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>圣地巡礼路线示例</title>
+  <title>动漫圣地巡礼路线示例</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #222;
+      margin: 0;
+      background: #faf7f0;
+      color: #102033;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
     h1 {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 18px 0;
-      background: #fafafa;
+    .note {
+      background: #fff7e8;
+      border-left: 4px solid #e98213;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      background: #fff;
+      border: 1px solid #e2d6c7;
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 14px 0;
+      box-shadow: 0 1px 6px rgba(0,0,0,.06);
     }
     a {
-      display: inline-block;
-      margin: 8px 12px 8px 0;
-      padding: 10px 14px;
-      border: 1px solid #0969da;
-      border-radius: 8px;
-      color: #0969da;
+      font-size: 18px;
+      font-weight: 700;
+      color: #006d77;
       text-decoration: none;
-      background: #fff;
     }
     a:hover {
       text-decoration: underline;
     }
-    .note {
-      color: #666;
-      font-size: 14px;
+    p {
+      margin: 8px 0 0;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>圣地巡礼路线示例</h1>
-  <p>这里展示两个 HTML 路线示例页面。</p>
+  <main>
+    <h1>动漫圣地巡礼路线示例</h1>
+    <p>这里展示的是由 Anime Pilgrimage Skills for Codex 生成的 HTML 路线示例。</p>
 
-  <div class="card">
-    <h2>路线示例</h2>
-    <a href="./pilgrimage_route_A.html">Route A：全量点位路线</a>
-    <a href="./pilgrimage_route_B.html">Route B：时间适配路线</a>
-  </div>
+    <div class="note">
+      天气、路线耗时、营业时间、价格和交通信息仅供参考，实际出行前请再次确认。
+    </div>
 
-  <p class="note">
-    路线、天气、营业时间、价格和交通信息仅供参考，实际出行前请再次确认。
-  </p>
+    <ul>
+        <li>
+          <a href="pilgrimage_route_A.html">Route A：全量点位路线</a>
+          <p>覆盖所有具有有效坐标的 Anitabi 点位</p>
+        </li>
+        <li>
+          <a href="pilgrimage_route_B_day_1.html">Route B：第 1 天时间适配路线</a>
+          <p>根据当天可用时间生成的实际出行路线</p>
+        </li>
+        <li>
+          <a href="pilgrimage_route_B_day_2.html">Route B：第 2 天时间适配路线</a>
+          <p>根据当天可用时间生成的实际出行路线</p>
+        </li>
+    </ul>
+  </main>
 </body>
 </html>
