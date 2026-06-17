@@ -255,3 +255,107 @@ Notes for `overall_map_url`:
 ## Chinese output requirement
 
 For the final user-facing itinerary, HTML pages, weather summaries, route labels, warning text, status fields, and manual-check notes, use Chinese by default. Keep only proper nouns and technical product names such as Bangumi, Anitabi, Google Maps, OSRM, OpenStreetMap, API, URL, HTML, CSV, KML, and JSON in English when needed. Do not output internal enum values such as `google_maps_url_only`, `balanced_time_fit`, `time_fit`, `unknown`, `scheduled`, or `manual-added` directly in the HTML; convert them to Chinese display text.
+
+---
+
+## v8 Shared Constraints Contract Additions
+
+All route-planning stages should also follow the shared constraints in:
+
+```text
+.agents/skills/pilgrimage-constraints/references/pilgrimage-constraints.md
+```
+
+### Output Language Contract
+
+```json
+{
+  "output_language": {
+    "primary": "zh-CN",
+    "secondary": null,
+    "mode": "single",
+    "source": "user_requested|inferred|default"
+  }
+}
+```
+
+Rules:
+
+- If the user requests a specific language, preserve it in `output_language.primary`.
+- If the user requests bilingual output, set `mode` to `bilingual` and fill `secondary`.
+- Downstream route and HTML stages must preserve and use this field.
+
+### Endpoint Contract
+
+```json
+{
+  "start_location": {
+    "name": "",
+    "address": "",
+    "lat": null,
+    "lng": null
+  },
+  "end_location": {
+    "name": "",
+    "address": "",
+    "lat": null,
+    "lng": null
+  },
+  "end_location_policy": "user_specified|return_to_start"
+}
+```
+
+Rules:
+
+- If the user gives an endpoint, set `end_location_policy` to `user_specified`.
+- If no endpoint is provided, copy `start_location` into `end_location` and set `end_location_policy` to `return_to_start`.
+
+### Multi-day Route Contract
+
+Route planning should preserve both route concepts:
+
+```json
+{
+  "stage": "route_plan",
+  "output_language": {
+    "primary": "zh-CN",
+    "secondary": null,
+    "mode": "single",
+    "source": "user_requested|inferred|default"
+  },
+  "routes": {
+    "route_a_full_all_points": {
+      "route_id": "route_a_full_all_points",
+      "display_name": "Route A：全量点位路线",
+      "scope": "all_days",
+      "selection_policy": "all_valid_anitabi_points",
+      "points": [],
+      "omitted_points": [],
+      "overall_map_url": "",
+      "overall_map_url_parts": []
+    },
+    "route_b_time_fit_by_day": [
+      {
+        "route_id": "route_b_day_1",
+        "display_name": "Route B：第 1 天时间适配路线",
+        "scope": "single_day",
+        "day_index": 1,
+        "date": "",
+        "selection_policy": "time_fit_subset",
+        "points": [],
+        "omitted_points": [],
+        "overall_map_url": "",
+        "overall_map_url_parts": []
+      }
+    ]
+  }
+}
+```
+
+Rules:
+
+- Route A is required for every itinerary.
+- Route A must include all valid Anitabi coordinate points.
+- Route B may be split by day.
+- Multi-day trips must not remove Route A.
+- Omitted Route B points must be preserved and shown in HTML.

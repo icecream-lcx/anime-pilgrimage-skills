@@ -5,6 +5,19 @@ description: Generate one or two editable HTML anime pilgrimage itinerary tables
 
 # Stage 6: Editable HTML Itinerary Builder
 
+## Shared Constraint Requirement
+
+Before executing this skill, read and follow the shared constraints defined in:
+
+```text
+.agents/skills/pilgrimage-constraints/references/pilgrimage-constraints.md
+```
+
+These constraints are mandatory. They define route structure, multi-day behavior, language output behavior, endpoint fallback, file generation policy, Google Maps fallback behavior, and HTML output requirements.
+
+Do not override these constraints unless the user explicitly asks to change the skill rules.
+
+
 Use this skill after route, weather, and place enrichment are available.
 
 ## Goal
@@ -66,3 +79,18 @@ Return the file paths and JSON using the `html_itinerary` contract.
 ## Chinese output requirement
 
 For the final user-facing itinerary, HTML pages, weather summaries, route labels, warning text, status fields, and manual-check notes, use Chinese by default. Keep only proper nouns and technical product names such as Bangumi, Anitabi, Google Maps, OSRM, OpenStreetMap, API, URL, HTML, CSV, KML, and JSON in English when needed. Do not output internal enum values such as `google_maps_url_only`, `balanced_time_fit`, `time_fit`, `unknown`, `scheduled`, or `manual-added` directly in the HTML; convert them to Chinese display text.
+
+## Multi-day HTML Output Policy
+
+For multi-day trips, do not overwrite Route A with daily Route B files.
+
+Required outputs:
+
+- `pilgrimage_route_A.html`: full all-point route across the whole trip.
+- `pilgrimage_route_B_day_1.html`, `pilgrimage_route_B_day_2.html`, ...: daily time-fit routes.
+
+Route A must always exist if any valid Anitabi coordinate points exist.
+
+## Output Language Rendering
+
+Read `output_language` from the input JSON. All visible HTML text, table headers, buttons, route labels, weather summaries, warnings, and manual-check notes must follow the selected language. Keep proper nouns such as Bangumi, Anitabi, Google Maps, OSRM, OpenStreetMap, API, URL, HTML, JSON unchanged when needed.

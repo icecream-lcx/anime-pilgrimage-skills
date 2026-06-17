@@ -5,6 +5,19 @@ description: Search Bangumi and related sources for an anime title or keyword, p
 
 # Stage 1: Anime Search and Confirmation
 
+## Shared Constraint Requirement
+
+Before executing this skill, read and follow the shared constraints defined in:
+
+```text
+.agents/skills/pilgrimage-constraints/references/pilgrimage-constraints.md
+```
+
+These constraints are mandatory. They define route structure, multi-day behavior, language output behavior, endpoint fallback, file generation policy, Google Maps fallback behavior, and HTML output requirements.
+
+Do not override these constraints unless the user explicitly asks to change the skill rules.
+
+
 Use this skill when the user provides an anime name, alias, keyword, season name, or Bangumi ID and wants to start a pilgrimage plan.
 
 ## Inputs

@@ -5,6 +5,19 @@ description: Build two anime pilgrimage route options: Route A covers all Anitab
 
 # Stage 4: Route and Weather Planning
 
+## Shared Constraint Requirement
+
+Before executing this skill, read and follow the shared constraints defined in:
+
+```text
+.agents/skills/pilgrimage-constraints/references/pilgrimage-constraints.md
+```
+
+These constraints are mandatory. They define route structure, multi-day behavior, language output behavior, endpoint fallback, file generation policy, Google Maps fallback behavior, and HTML output requirements.
+
+Do not override these constraints unless the user explicitly asks to change the skill rules.
+
+
 Use this skill after `pilgrimage_points` and `trip_profile` are available.
 
 ## Inputs
@@ -94,3 +107,28 @@ Return a summary and JSON using the `route_weather_plan` contract. Include:
 ## Chinese output requirement
 
 For the final user-facing itinerary, HTML pages, weather summaries, route labels, warning text, status fields, and manual-check notes, use Chinese by default. Keep only proper nouns and technical product names such as Bangumi, Anitabi, Google Maps, OSRM, OpenStreetMap, API, URL, HTML, CSV, KML, and JSON in English when needed. Do not output internal enum values such as `google_maps_url_only`, `balanced_time_fit`, `time_fit`, `unknown`, `scheduled`, or `manual-added` directly in the HTML; convert them to Chinese display text.
+
+## Mandatory Multi-day Route Structure
+
+For multi-day trips, do not output only daily Route B pages. Always preserve:
+
+- `route_a_full_all_points`: one full route covering all valid Anitabi points across the whole trip.
+- `route_b_time_fit_by_day`: one or more daily time-fit routes.
+
+For a two-day trip, expected HTML outputs are:
+
+```text
+pilgrimage_route_A.html
+pilgrimage_route_B_day_1.html
+pilgrimage_route_B_day_2.html
+```
+
+Route A must not be filtered by time. Route B may be filtered and split by day.
+
+## Output Language Propagation
+
+Read `trip_profile.output_language` and preserve it in the route plan JSON as `output_language`. Route names, warnings, weather summaries, and manual-confirmation notes should follow the selected language.
+
+## Endpoint Fallback
+
+If `end_location` is missing but `start_location` exists, set `end_location = start_location` and `end_location_policy = return_to_start`. Route A and every Route B day must use this rule unless the user provided an explicit endpoint.

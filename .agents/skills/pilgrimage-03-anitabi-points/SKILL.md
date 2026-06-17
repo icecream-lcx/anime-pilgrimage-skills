@@ -5,6 +5,19 @@ description: Retrieve and normalize Anitabi pilgrimage landmarks by confirmed Ba
 
 # Stage 3: Anitabi Point Retrieval
 
+## Shared Constraint Requirement
+
+Before executing this skill, read and follow the shared constraints defined in:
+
+```text
+.agents/skills/pilgrimage-constraints/references/pilgrimage-constraints.md
+```
+
+These constraints are mandatory. They define route structure, multi-day behavior, language output behavior, endpoint fallback, file generation policy, Google Maps fallback behavior, and HTML output requirements.
+
+Do not override these constraints unless the user explicitly asks to change the skill rules.
+
+
 Use this skill after `confirmed_work_and_trip_profile` is available.
 
 ## Inputs

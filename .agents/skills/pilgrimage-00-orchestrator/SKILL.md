@@ -5,6 +5,19 @@ description: Orchestrate the staged anime pilgrimage planning workflow by passin
 
 # Anime Pilgrimage Skill Orchestrator
 
+## Shared Constraint Requirement
+
+Before executing this skill, read and follow the shared constraints defined in:
+
+```text
+.agents/skills/pilgrimage-constraints/references/pilgrimage-constraints.md
+```
+
+These constraints are mandatory. They define route structure, multi-day behavior, language output behavior, endpoint fallback, file generation policy, Google Maps fallback behavior, and HTML output requirements.
+
+Do not override these constraints unless the user explicitly asks to change the skill rules.
+
+
 Use this skill when the user wants a multi-stage anime pilgrimage planning workflow, or when they say they want each skill output to become the next skill input.
 
 ## Required staged order
@@ -70,3 +83,14 @@ Return:
 ## Chinese output requirement
 
 For the final user-facing itinerary, HTML pages, weather summaries, route labels, warning text, status fields, and manual-check notes, use Chinese by default. Keep only proper nouns and technical product names such as Bangumi, Anitabi, Google Maps, OSRM, OpenStreetMap, API, URL, HTML, CSV, KML, and JSON in English when needed. Do not output internal enum values such as `google_maps_url_only`, `balanced_time_fit`, `time_fit`, `unknown`, `scheduled`, or `manual-added` directly in the HTML; convert them to Chinese display text.
+
+## Language and Constraint Propagation
+
+The orchestrator must ensure all downstream stages receive and preserve:
+
+- `output_language`
+- `end_location_policy`
+- `route_a_full_all_points`
+- `route_b_time_fit_by_day`
+
+For multi-day trips, Route A must remain a full all-point route, and Route B may be split by day.

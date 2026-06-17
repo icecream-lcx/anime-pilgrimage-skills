@@ -5,6 +5,19 @@ description: Plan a complete anime pilgrimage trip from an anime title or keywor
 
 # Anime Pilgrimage All-in-One Planner
 
+## Shared Constraint Requirement
+
+Before executing this skill, read and follow the shared constraints defined in:
+
+```text
+.agents/skills/pilgrimage-constraints/references/pilgrimage-constraints.md
+```
+
+These constraints are mandatory. They define route structure, multi-day behavior, language output behavior, endpoint fallback, file generation policy, Google Maps fallback behavior, and HTML output requirements.
+
+Do not override these constraints unless the user explicitly asks to change the skill rules.
+
+
 Use this skill when the user wants Codex to plan an anime pilgrimage / 聖地巡礼 / 圣地巡礼 trip from an anime name, keyword, Bangumi ID, Anitabi point ID, destination area, or travel date.
 
 ## Goal
@@ -119,3 +132,11 @@ Use them when helpful, or create task-specific scripts if the repository already
 ## Chinese output requirement
 
 For the final user-facing itinerary, HTML pages, weather summaries, route labels, warning text, status fields, and manual-check notes, use Chinese by default. Keep only proper nouns and technical product names such as Bangumi, Anitabi, Google Maps, OSRM, OpenStreetMap, API, URL, HTML, CSV, KML, and JSON in English when needed. Do not output internal enum values such as `google_maps_url_only`, `balanced_time_fit`, `time_fit`, `unknown`, `scheduled`, or `manual-added` directly in the HTML; convert them to Chinese display text.
+
+## Language and Multi-day Defaults
+
+Ask or infer the output language. Preserve it as `output_language` through all stages.
+
+If the user plans multiple days, generate one full Route A covering all valid Anitabi points and one Route B page per day when needed. Do not replace Route A with daily Route B pages.
+
+If the user does not specify an ending location, default to returning to the starting location.

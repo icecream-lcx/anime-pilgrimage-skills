@@ -5,6 +5,19 @@ description: Enrich pilgrimage stops that are restaurants, cafés, shops, or att
 
 # Stage 5: Place Hours and Price Enrichment
 
+## Shared Constraint Requirement
+
+Before executing this skill, read and follow the shared constraints defined in:
+
+```text
+.agents/skills/pilgrimage-constraints/references/pilgrimage-constraints.md
+```
+
+These constraints are mandatory. They define route structure, multi-day behavior, language output behavior, endpoint fallback, file generation policy, Google Maps fallback behavior, and HTML output requirements.
+
+Do not override these constraints unless the user explicitly asks to change the skill rules.
+
+
 Use this skill after route options are generated.
 
 ## Inputs
