@@ -15,12 +15,14 @@ It supports two workflows:
 
 You can view the generated itinerary examples through GitHub Pages:
 
+* [Demo homepage](https://icecream-lcx.github.io/anime-pilgrimage-skills/)
 * [Route A: Full landmark route](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_A.html)
-* [Route B: Time-fit route](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_B.html)
+* [Route B: Day 1 time-fit route](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_B_day_1.html)
+* [Route B: Day 2 time-fit route](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_B_day_2.html)
 
-Route A covers all valid Anitabi coordinate points, while Route B provides a time-fit route based on the user's available travel time.
+Route A covers all valid Anitabi coordinate points and is useful for viewing the full distribution of pilgrimage landmarks. Route B provides daily time-fit routes based on the user's available travel time.
 
-The demo pages are generated HTML examples. Weather, route duration, opening hours, prices, and traffic information are for reference only and should be verified again before departure.
+The demo pages are generated HTML examples. They support deleting stops, reordering points, rebuilding route links, and recalculating estimated times. Weather, route duration, opening hours, prices, and traffic information are for reference only and should be verified again before departure.
 
 ## Features
 
@@ -144,7 +146,7 @@ The skills depend on the shared constraints, helper scripts, and output contract
 ### All-in-one Skill
 
 ```text
-$anime-pilgrimage-all-in-one 帮我规划《孤独摇滚！》下北泽圣地巡礼，日期是 2026-07-10，上午 9 点到晚上 7 点，从下北泽站出发，回到下北泽站。
+$anime-pilgrimage-all-in-one 帮我规划《孤独摇滚！》下北泽圣地巡礼，日期是 2026-07-10，上午 9 点到晚上 7 点，从下北泽站出发，回到代代木公园。
 ```
 
 If the user does not provide an ending location, the route will return to the starting location by default.

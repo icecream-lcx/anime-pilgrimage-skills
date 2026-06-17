@@ -15,12 +15,14 @@
 
 可以通过 GitHub Pages 查看生成后的路线示例：
 
+* [示例首页](https://icecream-lcx.github.io/anime-pilgrimage-skills/)
 * [Route A：全量点位路线](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_A.html)
-* [Route B：时间适配路线](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_B.html)
+* [Route B：第 1 天时间适配路线](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_B_day_1.html)
+* [Route B：第 2 天时间适配路线](https://icecream-lcx.github.io/anime-pilgrimage-skills/pilgrimage_route_B_day_2.html)
 
-Route A 覆盖所有具有有效坐标的 Anitabi 点位；Route B 则根据用户可用出行时间生成时间适配路线。
+Route A 覆盖所有具有有效坐标的 Anitabi 点位，用于查看完整巡礼点位分布；Route B 则根据用户可用出行时间生成按天拆分的时间适配路线。
 
-示例页面为生成后的 HTML 结果。天气、路线耗时、营业时间、价格和交通信息仅供参考，实际出行前请再次确认。
+示例页面为生成后的 HTML 结果，支持点位删除、顺序调整、路线链接重建和时间重新估算。天气、路线耗时、营业时间、价格和交通信息仅供参考，实际出行前请再次确认。
 
 ## 功能特点
 
@@ -144,7 +146,7 @@ shared/
 ### 一站式 Skill
 
 ```text
-$anime-pilgrimage-all-in-one 帮我规划《孤独摇滚！》下北泽圣地巡礼，日期是 2026-07-10，上午 9 点到晚上 7 点，从下北泽站出发，回到下北泽站。
+$anime-pilgrimage-all-in-one 帮我规划《孤独摇滚！》下北泽圣地巡礼，日期是 2026-07-10，上午 9 点到晚上 7 点，从下北泽站出发，回到代代木公园。
 ```
 
 若用户没有提供终点，则默认最终返回出发地。
